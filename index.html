@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<title>Documentation</title>
+	<title>Energy System Description Language Model Reference Documentation</title>
 
 
 
@@ -139,7 +139,7 @@ require.config({
 		<div class="panel-heading">
 			<h3 class="panel-title">
 				
-					<a href="index.html">Model documentation</a>
+					<a href="index.html">ESDL Model documentation</a>
 				
 			</h3>
 		</div>
@@ -169,7 +169,19 @@ require.config({
       </td>
       <td id="splitter" style="width:5px;min-width:5px;padding:0px;background:#d9edf7;border:solid 1px #bce8f1;cursor:col-resize"></td>
       <td id="right-panel">
-        <div id="doc-content"></div>
+        <div id="doc-content">
+        <h1>ESDL Model Reference documentation.</h1>
+        <p>The Energy System Description Language (ESDL) is a modelling language created for modelling the components in an energy system and their relations towards each other. 
+        Furthermore ESDL is capable of expressing the dynamic behaviour of components in the energy system. For instance the power consumption of an neighbourhood. 
+        ESDL describes components by their basic functionality (so called Energy Capabilities), these are modelled in 5 abstract categories: Production, Consumption, Storage, Transport and Conversion. 
+        ESDL enables energy modelers to model a complex energy system in a generic way. The language is machine readable so makers of energy transition calculation tools and GIS applications can support ESDL in order to enforce the interoperability of their products.</p>
+        <p></p>
+        <p>This site describes the model in detail. All classes, attributes and references of the ESDL model are described and each class is shown in a figure with its direct references.</p>
+        <p></p>
+        <p>ESDL is developed by <a href="https://www.tno.nl/">TNO</a></p>
+        <p>For more information about ESDL, see <a href="https://energytransition.gitbook.io/esdl/">the ESDL gitbook</a></p>
+        
+        </div>
       </td>
     </tr>
   </table>
@@ -276,6 +288,10 @@ require.config({
 	}
 	
 	jQuery(window).resize(resizeHandler);
+	
+	toc.on('ready.jstree', function() {
+	    $("#toc").jstree("open_all");          
+	});
 	
 	setInterval(resizeHandler, 100);
 });</script>
