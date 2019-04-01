@@ -1,0 +1,707 @@
+
+<script>document.title="EClass SingleValue";</script>
+<h2>
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>SingleValue</h2>
+<div style="margin-bottom:5px;font-family:monospace"></div>
+<div>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#nsd_chr_tab_0" data-toggle="tab">Documentation</a>
+    </li>
+    <li>
+      <a href="#nsd_chr_tab_1" data-toggle="tab">
+<img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
+    </li>
+    <li>
+      <a href="#nsd_chr_tab_2" data-toggle="tab">
+<img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
+    </li>
+    <li>
+      <a href="#nsd_chr_tab_3" data-toggle="tab">
+<img src="resources/images/EOperation.gif" style="margin-right:5px"/> Operations</a>
+    </li>
+    <li>
+      <a href="#nsd_chr_tab_4" data-toggle="tab">Supertypes</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div id="nsd_chr_tab_0" class="tab-pane active">
+      <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>A profile used to define a single value. This should be used when no information is present about the time. E.g. the price of a PV panel as currently known When a model queries for a value from a certain date (and to a certain date), that information will be ignored and it will always return this value.</p></div>
+      <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/SingleValue.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StaticProfile.html" title="Stores the profile in the ESDL model itself, in contrast with an external profile, which refers to an external source for a profile" alt="" coords="78,60,175,108"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/SingleValue.html" title="A profile used to define a single value. " alt="" coords="78,168,176,229"/>
+</map>
+</div>
+    <div id="nsd_chr_tab_1" class="tab-pane">
+      <div id="nsd_chs_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_cht_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chs_accordion" href="#nsd_cht_collapse_collapse" aria-expanded="false" aria-controls="nsd_cht_collapse_collapse"><b>id</b> : EString (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_cht_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_cht_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_chu_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chs_accordion" href="#nsd_chu_collapse_collapse" aria-expanded="false" aria-controls="nsd_chu_collapse_collapse"><b>interpolationMethod</b> : InterpolationMethodEnum (GenericProfile)  - <I>Type of interpolation between elements in the profile. </I></a>
+            </h4>
+          </div>
+          <div id="nsd_chu_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_chu_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/InterpolationMethodEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>InterpolationMethodEnum</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">UNDEFINED</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_chv_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chs_accordion" href="#nsd_chv_collapse_collapse" aria-expanded="false" aria-controls="nsd_chv_collapse_collapse"><b>name</b> : EString (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_chv_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_chv_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_chw_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chs_accordion" href="#nsd_chw_collapse_collapse" aria-expanded="false" aria-controls="nsd_chw_collapse_collapse"><b>profileType</b> : ProfileTypeEnum (GenericProfile)  - <I>(deprecated in future version, to be replaced with Quantity and Units)</I></a>
+            </h4>
+          </div>
+          <div id="nsd_chw_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_chw_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileTypeEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>ProfileTypeEnum</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">UNDEFINED</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_chx_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chs_accordion" href="#nsd_chx_collapse_collapse" aria-expanded="false" aria-controls="nsd_chx_collapse_collapse"><b>value</b> : EDouble</a>
+            </h4>
+          </div>
+          <div id="nsd_chx_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_chx_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EDouble.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDouble</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_chr_tab_2" class="tab-pane">
+      <div id="nsd_chy_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_chz_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chy_accordion" href="#nsd_chz_collapse_collapse" aria-expanded="false" aria-controls="nsd_chz_collapse_collapse"><b>dataSource</b> : AbstractDataSource (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_chz_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_chz_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractDataSource</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_ci0_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_chy_accordion" href="#nsd_ci0_collapse_collapse" aria-expanded="false" aria-controls="nsd_ci0_collapse_collapse"><b>profileQuantityAndUnit</b> : AbstractQuantityAndUnit (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_ci0_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_ci0_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractQuantityAndUnit</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_chr_tab_3" class="tab-pane">
+      <div id="nsd_ci1_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_ci2_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_ci1_accordion" href="#nsd_ci2_collapse_collapse" aria-expanded="false" aria-controls="nsd_ci2_collapse_collapse"><b>getProfile</b> : ProfileElement (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_ci2_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_ci2_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileElement.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ProfileElement</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Exceptions</th>
+                  <td>
+                    <ul></ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+              </table>
+              <h3>Parameters</h3>
+              <h4>from : 
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a> 0..1</h4>
+              <h4>to : 
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a> 0..1</h4>
+              <h4>aggregationPrecision : 
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Duration.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Duration</a> 0..1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_ci3_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_ci1_accordion" href="#nsd_ci3_collapse_collapse" aria-expanded="false" aria-controls="nsd_ci3_collapse_collapse"><b>setProfile</b> : EBoolean (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_ci3_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_ci3_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e65636c697073652e6f72672f656d662f323030322f45636f7265/EBoolean.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EBoolean</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Exceptions</th>
+                  <td>
+                    <ul></ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+              </table>
+              <h3>Parameters</h3>
+              <h4>profileElementList : 
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileElement.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ProfileElement</a> *</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_chr_tab_4" class="tab-pane">
+      <table class="table table-bordered">
+        <tr class="info">
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StaticProfile.html">StaticProfile</a></td>
+          <td>Stores the profile in the ESDL model itself, in contrast with an external profile, which refers to an external source for a profile</td>
+        </tr>
+      </table>
+    </div></div>
+</div>
