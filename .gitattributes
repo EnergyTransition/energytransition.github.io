@@ -1,0 +1,3 @@
+# The documentation generator uses crlf endings in the HTML files. also match this in the repo,
+# otherwise we have always changes when pushing
+*.html text eol=crlf
