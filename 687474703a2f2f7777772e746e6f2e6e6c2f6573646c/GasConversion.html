@@ -6,7 +6,7 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_19z_tab_0" data-toggle="tab">Diagram</a>
+      <a href="#nsd_19z_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
       <a href="#nsd_19z_tab_1" data-toggle="tab">
@@ -22,9 +22,10 @@
   </ul>
   <div class="tab-content">
     <div id="nsd_19z_tab_0" class="tab-pane active">
+      <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Defines an asset that can convert gas into another form of gas. E.g. SMR or ATR.</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GasConversion.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
 <area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Conversion.html" title="An abstract class that describes EnergyAssets that can convert one energy carrier into another. " alt="" coords="73,60,181,163"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GasConversion.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GasConversion.html" alt="" coords="46,223,207,298"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GasConversion.html" title="Defines an asset that can convert gas into another form of gas. " alt="" coords="46,223,207,298"/>
 </map>
 </div>
     <div id="nsd_19z_tab_1" class="tab-pane">
@@ -968,11 +969,11 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1ae_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1a0_accordion" href="#nsd_1ae_collapse_collapse" aria-expanded="false" aria-controls="nsd_1ae_collapse_collapse"><b>owner</b> : EString (Asset) </a>
+              <a data-toggle="collapse" data-parent="#nsd_1a0_accordion" href="#nsd_1ae_collapse_collapse" aria-expanded="false" aria-controls="nsd_1ae_collapse_collapse"><b>owner</b> : EString (Asset)  - <I>Defines the owner of an asset (free text). </I></a>
             </h4>
           </div>
           <div id="nsd_1ae_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1ae_collapse_panel_body" class="panel-body">
+            <div id="nsd_1ae_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -1034,8 +1035,7 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table>
-            </div>
+              </table></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -1330,7 +1330,7 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1aj_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1a0_accordion" href="#nsd_1aj_collapse_collapse" aria-expanded="false" aria-controls="nsd_1aj_collapse_collapse"><b>type</b> : GasConversionTypeEnum</a>
+              <a data-toggle="collapse" data-parent="#nsd_1a0_accordion" href="#nsd_1aj_collapse_collapse" aria-expanded="false" aria-controls="nsd_1aj_collapse_collapse"><b>type</b> : GasConversionTypeEnum - <I>Type of gas conversion, e.g. SMR or ATR</I></a>
             </h4>
           </div>
           <div id="nsd_1aj_collapse_collapse" class="panel-collapse collapse">
@@ -1401,7 +1401,7 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1al_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1al_collapse_collapse" aria-expanded="false" aria-controls="nsd_1al_collapse_collapse"><b>KPIs</b> : KPIs (Asset) </a>
+              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1al_collapse_collapse" aria-expanded="false" aria-controls="nsd_1al_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
             </h4>
           </div>
           <div id="nsd_1al_collapse_collapse" class="panel-collapse collapse">
@@ -1688,7 +1688,7 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1ao_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1ao_collapse_collapse" aria-expanded="false" aria-controls="nsd_1ao_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset) </a>
+              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1ao_collapse_collapse" aria-expanded="false" aria-controls="nsd_1ao_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset)  - <I>Defines a control strategy for a specific asset</I></a>
             </h4>
           </div>
           <div id="nsd_1ao_collapse_collapse" class="panel-collapse collapse">
@@ -2254,7 +2254,7 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1au_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1au_collapse_collapse" aria-expanded="false" aria-controls="nsd_1au_collapse_collapse"><b>residualHeatSourcePotential</b> : ResidualHeatSourcePotential (Conversion) </a>
+              <a data-toggle="collapse" data-parent="#nsd_1ak_accordion" href="#nsd_1au_collapse_collapse" aria-expanded="false" aria-controls="nsd_1au_collapse_collapse"><b>residualHeatSourcePotential</b> : ResidualHeatSourcePotential (Conversion)  - <I>Defines the residual heat potential in a specific area.</I></a>
             </h4>
           </div>
           <div id="nsd_1au_collapse_collapse" class="panel-collapse collapse">

@@ -24,13 +24,13 @@
     <div id="nsd_4u_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Represents more than one building aggregated into one entity. It supports different types of aggregation, such as building type, energy label etc.</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AggregatedBuilding.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/FromToDistribution.html" title="Defines a distribution in terms of ‘from’ and ‘to’" alt="" coords="38,228,176,276"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyLabelDistribution.html" title="Defines a distribution in terms of energy labels" alt="" coords="211,228,375,276"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" alt="" coords="410,228,576,276"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HousingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HousingTypeDistribution.html" alt="" coords="611,228,779,276"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AggregatedBuilding.html" title="Represents more than one building aggregated into one entity. " alt="" coords="602,60,742,135"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ResidentialBuildingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ResidentialBuildingTypeDistribution.html" alt="" coords="1010,228,1239,276"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBuilding.html" title="Describes the shared properties of building, building unit and aggregated building" alt="" coords="814,214,975,289"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/FromToDistribution.html" title="Defines a distribution in terms of ‘from’ and ‘to’" alt="" coords="442,228,580,276"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyLabelDistribution.html" title="Defines a distribution in terms of energy labels" alt="" coords="1076,228,1240,276"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" alt="" coords="241,228,407,276"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HousingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HousingTypeDistribution.html" alt="" coords="38,228,206,276"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AggregatedBuilding.html" title="Represents more than one building aggregated into one entity. " alt="" coords="619,60,759,135"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ResidentialBuildingTypeDistribution.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ResidentialBuildingTypeDistribution.html" alt="" coords="811,228,1040,276"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBuilding.html" title="Describes the shared properties of building, building unit and aggregated building" alt="" coords="615,214,776,289"/>
 </map>
 </div>
     <div id="nsd_4u_tab_1" class="tab-pane">
@@ -968,11 +968,11 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_59_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4v_accordion" href="#nsd_59_collapse_collapse" aria-expanded="false" aria-controls="nsd_59_collapse_collapse"><b>owner</b> : EString (Asset) </a>
+              <a data-toggle="collapse" data-parent="#nsd_4v_accordion" href="#nsd_59_collapse_collapse" aria-expanded="false" aria-controls="nsd_59_collapse_collapse"><b>owner</b> : EString (Asset)  - <I>Defines the owner of an asset (free text). </I></a>
             </h4>
           </div>
           <div id="nsd_59_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_59_collapse_panel_body" class="panel-body">
+            <div id="nsd_59_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -1034,8 +1034,7 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table>
-            </div>
+              </table></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -1261,7 +1260,7 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_5e_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_5d_accordion" href="#nsd_5e_collapse_collapse" aria-expanded="false" aria-controls="nsd_5e_collapse_collapse"><b>KPIs</b> : KPIs (Asset) </a>
+              <a data-toggle="collapse" data-parent="#nsd_5d_accordion" href="#nsd_5e_collapse_collapse" aria-expanded="false" aria-controls="nsd_5e_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
             </h4>
           </div>
           <div id="nsd_5e_collapse_collapse" class="panel-collapse collapse">

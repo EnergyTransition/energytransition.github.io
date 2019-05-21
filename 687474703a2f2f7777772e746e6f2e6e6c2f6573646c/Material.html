@@ -1,48 +1,263 @@
 
-<script>document.title="EClass MeasuresCollection";</script>
+<script>document.title="EClass Material";</script>
 <h2>
-<img src="resources/images/EClass.gif" style="margin-right:5px"/>MeasuresCollection</h2>
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Material</h2>
 <div style="margin-bottom:5px;font-family:monospace"></div>
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_1yy_tab_0" data-toggle="tab">Diagram</a>
+      <a href="#nsd_1yv_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
-      <a href="#nsd_1yy_tab_1" data-toggle="tab">
+      <a href="#nsd_1yv_tab_1" data-toggle="tab">
 <img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
     </li>
     <li>
-      <a href="#nsd_1yy_tab_2" data-toggle="tab">
+      <a href="#nsd_1yv_tab_2" data-toggle="tab">
 <img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
+    </li>
+    <li>
+      <a href="#nsd_1yv_tab_3" data-toggle="tab">Supertypes</a>
     </li>
   </ul>
   <div class="tab-content">
-    <div id="nsd_1yy_tab_0" class="tab-pane active">
-      <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/MeasuresCollection.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Measures.html" title="Collection of measures that can be applied to an energy system" alt="" coords="125,60,212,108"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html" title="Describes the costs to acquire, install and maintain a certain asset." alt="" coords="287,591,407,639"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html" alt="" coords="215,409,357,457"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/MeasuresCollection.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/MeasuresCollection.html" alt="" coords="188,186,330,275"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html" title="Assets are all physical thing in the EnergySystem. " alt="" coords="38,354,179,512"/>
+    <div id="nsd_1yv_tab_0" class="tab-pane active">
+      <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Class for describing materials other than carriers (e.g. water as an input for an electrolyzer)</p></div>
+      <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Material.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html" title="Abstract class to define the carrier of energy, e.g. a energy carrier or a commodity (such as electricity)" alt="" coords="92,60,162,135"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Material.html" title="Class for describing materials other than carriers (e.g. water as an input for an electrolyzer)" alt="" coords="40,196,214,271"/>
 </map>
 </div>
-    <div id="nsd_1yy_tab_1" class="tab-pane">
-      <div id="nsd_1yz_accordion" role="tablist" class="panel-group">
+    <div id="nsd_1yv_tab_1" class="tab-pane">
+      <div id="nsd_1yw_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1yx_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1yw_accordion" href="#nsd_1yx_collapse_collapse" aria-expanded="false" aria-controls="nsd_1yx_collapse_collapse"><b>density</b> : EDouble - <I>The density of the material in kg/m3</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1yx_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1yx_collapse_panel_body" class="panel-body"><p>The density of the material in kg/m3</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EDouble.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDouble</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1yy_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1yw_accordion" href="#nsd_1yy_collapse_collapse" aria-expanded="false" aria-controls="nsd_1yy_collapse_collapse"><b>id</b> : EString (Carrier) </a>
+            </h4>
+          </div>
+          <div id="nsd_1yy_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1yy_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Carrier</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1yz_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1yw_accordion" href="#nsd_1yz_collapse_collapse" aria-expanded="false" aria-controls="nsd_1yz_collapse_collapse"><b>name</b> : EString (Carrier) </a>
+            </h4>
+          </div>
+          <div id="nsd_1yz_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1yz_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Carrier</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
         <div class="panel panel-default">
           <div role="tab" id="nsd_1z0_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1yz_accordion" href="#nsd_1z0_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z0_collapse_collapse"><b>description</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_1yw_accordion" href="#nsd_1z0_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z0_collapse_collapse"><b>stateOfMatter</b> : StateOfMatterEnum - <I>The state of matter of the material (SOLID, LIQUID, GASEOUS)</I></a>
             </h4>
           </div>
           <div id="nsd_1z0_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1z0_collapse_panel_body" class="panel-body">
+            <div id="nsd_1z0_collapse_panel_body" class="panel-body"><p>The state of matter of the material (SOLID, LIQUID, GASEOUS)</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
                   <td>
-<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EString.html">
-<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StateOfMatterEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>StateOfMatterEnum</a></td>
                 </tr>
                 <tr>
                   <th style="align:left">Cardinality</th>
@@ -51,7 +266,7 @@
                 <tr>
                   <th style="align:left">Default value</th>
                   <td>
-                    <div style="white-space:pre;font-family:monospace"></div>
+                    <div style="white-space:pre;font-family:monospace">UNDEFINED</div>
                   </td>
                 </tr>
                 <tr>
@@ -92,253 +307,33 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table>
-            </div>
+              </table></div>
           </div>
         </div>
-        <div class="panel panel-default">
-          <div role="tab" id="nsd_1z1_collapse_heading" class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1yz_accordion" href="#nsd_1z1_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z1_collapse_collapse"><b>id</b> : EString</a>
-            </h4>
-          </div>
-          <div id="nsd_1z1_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1z1_collapse_panel_body" class="panel-body">
-              <table class="table table-bordered">
-                <tr>
-                  <th style="align:left">Type</th>
-                  <td>
-<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EString.html">
-<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Cardinality</th>
-                  <td>0..1</td>
-                </tr>
-                <tr>
-                  <th style="align:left">Default value</th>
-                  <td>
-                    <div style="white-space:pre;font-family:monospace"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Changeable</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Derived</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">ID</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Ordered</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Transient</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unique</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unsettable</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Volatile</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div id="nsd_1yv_tab_2" class="tab-pane">
+      <div id="nsd_1z1_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
           <div role="tab" id="nsd_1z2_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1yz_accordion" href="#nsd_1z2_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z2_collapse_collapse"><b>name</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_1z1_accordion" href="#nsd_1z2_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z2_collapse_collapse"><b>cost</b> : GenericProfile (Carrier)  - <I>All profiles should describe these fields: a name and a ProfileType. </I></a>
             </h4>
           </div>
           <div id="nsd_1z2_collapse_collapse" class="panel-collapse collapse">
             <div id="nsd_1z2_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
-                  <th style="align:left">Type</th>
+                  <th style="align:left">Declaring Type</th>
                   <td>
-<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/EString.html">
-<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Carrier</a></td>
                 </tr>
-                <tr>
-                  <th style="align:left">Cardinality</th>
-                  <td>0..1</td>
-                </tr>
-                <tr>
-                  <th style="align:left">Default value</th>
-                  <td>
-                    <div style="white-space:pre;font-family:monospace"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Changeable</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Derived</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">ID</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Ordered</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Transient</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unique</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unsettable</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Volatile</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="nsd_1yy_tab_2" class="tab-pane">
-      <div id="nsd_1z3_accordion" role="tablist" class="panel-group">
-        <div class="panel panel-default">
-          <div role="tab" id="nsd_1z4_collapse_heading" class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1z3_accordion" href="#nsd_1z4_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z4_collapse_collapse"><b>asset</b> : Asset - <I>Assets are all physical thing in the EnergySystem. </I></a>
-            </h4>
-          </div>
-          <div id="nsd_1z4_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1z4_collapse_panel_body" class="panel-body">
-              <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
                   <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html">
-<img src="resources/images/EClass.gif" style="margin-right:5px"/>Asset</a></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Cardinality</th>
-                  <td>*</td>
-                </tr>
-                <tr>
-                  <th style="align:left">Default value</th>
-                  <td>
-                    <div style="white-space:pre;font-family:monospace"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Changeable</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Container</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Containment</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Derived</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">EKeys</th>
-                  <td>
-                    <ol></ol>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Opposite</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Ordered</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Resolve proxies</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Transient</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unique</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unsettable</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Volatile</th>
-                  <td></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div role="tab" id="nsd_1z5_collapse_heading" class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1z3_accordion" href="#nsd_1z5_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z5_collapse_collapse"><b>costInformation</b> : CostInformation - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
-            </h4>
-          </div>
-          <div id="nsd_1z5_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1z5_collapse_panel_body" class="panel-body">
-              <table class="table table-bordered">
-                <tr>
-                  <th style="align:left">Type</th>
-                  <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html">
-<img src="resources/images/EClass.gif" style="margin-right:5px"/>CostInformation</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
                 </tr>
                 <tr>
                   <th style="align:left">Cardinality</th>
@@ -415,14 +410,20 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1z6_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1z3_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1z3_accordion" href="#nsd_1z6_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z6_collapse_collapse"><b>dataSource</b> : AbstractDataSource</a>
+              <a data-toggle="collapse" data-parent="#nsd_1z1_accordion" href="#nsd_1z3_collapse_collapse" aria-expanded="false" aria-controls="nsd_1z3_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Carrier)  - <I>Abstract class to describe data sources or references to data sources</I></a>
             </h4>
           </div>
-          <div id="nsd_1z6_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1z6_collapse_panel_body" class="panel-body">
+          <div id="nsd_1z3_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1z3_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Carrier</a></td>
+                </tr>
                 <tr>
                   <th style="align:left">Type</th>
                   <td>
@@ -504,5 +505,18 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="nsd_1yv_tab_3" class="tab-pane">
+      <table class="table table-bordered">
+        <tr class="info">
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html">Carrier</a></td>
+          <td>Abstract class to define the carrier of energy, e.g. a energy carrier or a commodity (such as electricity)</td>
+        </tr>
+      </table>
     </div></div>
 </div>

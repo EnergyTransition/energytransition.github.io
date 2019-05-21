@@ -6,7 +6,7 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_pc_tab_0" data-toggle="tab">Diagram</a>
+      <a href="#nsd_pc_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
       <a href="#nsd_pc_tab_1" data-toggle="tab">
@@ -25,15 +25,16 @@
   </ul>
   <div class="tab-content">
     <div id="nsd_pc_tab_0" class="tab-pane active">
+      <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Defines a control strategy for a specific asset</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="431,60,532,108"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="284,60,396,108"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" alt="" coords="38,283,153,331"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" alt="" coords="352,168,469,216"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" alt="" coords="188,283,305,331"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" alt="" coords="679,283,798,331"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" alt="" coords="516,283,644,331"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" alt="" coords="341,276,481,337"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="306,60,407,108"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="443,60,555,108"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="38,283,153,331"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="369,168,486,216"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)" alt="" coords="681,283,798,331"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="527,283,646,331"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="Control strategy specifying that an asset is driven by the demand of one of the output ports" alt="" coords="364,283,492,331"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="Control strategy that specifies a max power at which the production is curtailed" alt="" coords="189,276,329,337"/>
 </map>
 </div>
     <div id="nsd_pc_tab_1" class="tab-pane">
@@ -795,27 +796,27 @@
         <tr>
           <td>
 <a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html">DrivenByProfile</a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html">DrivenBySupply</a></td>
-          <td></td>
+          <td>Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)</td>
         </tr>
         <tr>
           <td>
 <a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html">CurtailmentStrategy</a></td>
-          <td></td>
+          <td>Control strategy that specifies a max power at which the production is curtailed</td>
         </tr>
         <tr>
           <td>
 <a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html">DrivenByDemand</a></td>
-          <td></td>
+          <td>Control strategy specifying that an asset is driven by the demand of one of the output ports</td>
         </tr>
         <tr>
           <td>
 <a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html">StorageStrategy</a></td>
-          <td></td>
+          <td>Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)</td>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html">DrivenBySupply</a></td>
+          <td>Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)</td>
         </tr>
       </table>
     </div></div>
