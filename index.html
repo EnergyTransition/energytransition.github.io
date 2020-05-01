@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<title>Energy System Description Language Model Reference Documentation</title>
+	<title>ESDL Model Reference Documentation</title>
 
 
 
@@ -139,7 +139,7 @@ require.config({
 		<div class="panel-heading">
 			<h3 class="panel-title">
 				
-					<a href="index.html">ESDL Model documentation</a>
+					<a href="index.html">ESDL Model Reference Documentation</a>
 				
 			</h3>
 		</div>
@@ -170,7 +170,8 @@ require.config({
       <td id="splitter" style="width:5px;min-width:5px;padding:0px;background:#d9edf7;border:solid 1px #bce8f1;cursor:col-resize"></td>
       <td id="right-panel">
         <div id="doc-content">
-        <h1>ESDL Model Reference documentation.</h1>
+<!-- HTML shown at the intro page -->
+	<h1>ESDL Model Reference documentation.</h1>
 	<h3>Introduction to ESDL</h3>
         <p>The Energy System Description Language (ESDL) is a modelling language created for modelling the components in an energy system and their relations towards each other. 
         Furthermore ESDL is capable of expressing the dynamic behaviour of components in the energy system. For instance the power consumption of an neighbourhood. 
@@ -185,9 +186,7 @@ require.config({
         <p></p>
 	<h3>More information</h3>
         <p>For more information about ESDL, see <a href="https://energytransition.gitbook.io/esdl/">the ESDL gitbook</a></p>
-        <p>ESDL is open source and developed by <a href="https://www.tno.nl/">TNO</a></p>
-
-        </div>
+        <p>ESDL is open source and developed by <a href="https://www.tno.nl/">TNO</a></p></div>
       </td>
     </tr>
   </table>
@@ -242,7 +241,7 @@ require.config({
 	var body = jQuery("body");
 	var docContent = jQuery('#doc-content');	
 	var toc = jQuery('#toc');
-	var searchResults = jQuery('div#search-container > ol');
+	//var searchResults = jQuery('div#search-container > ol');
 	var oldBottom = -1;
 	
 	function resizeHandler() {
@@ -270,9 +269,9 @@ require.config({
 			var tocHeight = docContentBottom - tocRect.top - 1;
 			toc.height(tocHeight);
 			
-			var searchResultsRect = searchResults[0].getBoundingClientRect();
-			var searchResultsHeight = docContentBottom - searchResultsRect.top - 1;
-			searchResults.height(searchResultsHeight);
+			//var searchResultsRect = searchResults[0].getBoundingClientRect();
+			//var searchResultsHeight = docContentBottom - searchResultsRect.top - 1;
+			//searchResults.height(searchResultsHeight);
 			
 			// Scrolling current selection into view
 			tocTreePromise.then(function(tocTree) {
@@ -295,12 +294,11 @@ require.config({
 	
 	jQuery(window).resize(resizeHandler);
 	
-	toc.on('ready.jstree', function() {
-	    $("#toc").jstree("open_all");          
-	});
-	
 	setInterval(resizeHandler, 100);
 });</script>
+  <script>$('#toc').on('ready.jstree', function() {
+	    $("#toc").jstree("open_all");          
+	});</script>
 </div>
 								
 	</div>
