@@ -27,16 +27,16 @@
     <div id="nsd_1h5_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>An abstract class that describes a connectable Asset using ports. EnergyAssets main subclasses contain the 5 capability type: Producer, Consumer, Storage, Conversion and Transport </p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="565,303,666,351"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="847,477,964,525"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="717,463,812,539"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBehaviour.html" title="Abstract class for specification of the (dynamic) behaviour of an asset" alt="" coords="549,463,682,539"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Consumer.html" title="An abstract class that describes EnergyAssets that can consume energy. " alt="" coords="233,463,371,539"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Conversion.html" title="An abstract class that describes EnergyAssets that can convert one energy carrier into another. " alt="" coords="406,450,514,553"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="634,90,776,193"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Producer.html" title="An abstract class that describes EnergyAssets that can produce energy. " alt="" coords="32,450,198,553"/>
-<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html" title="An abstract class that describes EnergyAssets that can store energy. " alt="" coords="999,429,1142,573"/>
-<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html" title="Assets are all physical thing in the EnergySystem. " alt="" coords="457,42,598,242"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="594,303,695,351"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="657,477,774,525"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="527,463,622,539"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBehaviour.html" title="Abstract class for specification of the (dynamic) behaviour of an asset" alt="" coords="1188,463,1321,539"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Consumer.html" title="An abstract class that describes EnergyAssets that can consume energy. " alt="" coords="32,463,170,539"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Conversion.html" title="An abstract class that describes EnergyAssets that can convert one energy carrier into another. " alt="" coords="384,450,492,553"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="1011,450,1153,553"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Producer.html" title="An abstract class that describes EnergyAssets that can produce energy. " alt="" coords="810,450,976,553"/>
+<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html" title="An abstract class that describes EnergyAssets that can store energy. " alt="" coords="205,429,348,573"/>
+<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html" title="Assets are all physical thing in the EnergySystem. " alt="" coords="574,42,715,242"/>
 </map>
 </div>
     <div id="nsd_1h5_tab_1" class="tab-pane">
@@ -616,7 +616,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">days</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -1122,7 +1132,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">m&sup2;</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -1194,7 +1214,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">years</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
       </div>
@@ -2339,13 +2369,13 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Producer.html">Producer</a></td>
-          <td>An abstract class that describes EnergyAssets that can produce energy. </td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Consumer.html">Consumer</a></td>
+          <td>An abstract class that describes EnergyAssets that can consume energy. </td>
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Consumer.html">Consumer</a></td>
-          <td>An abstract class that describes EnergyAssets that can consume energy. </td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html">Storage</a></td>
+          <td>An abstract class that describes EnergyAssets that can store energy. </td>
         </tr>
         <tr>
           <td>
@@ -2359,8 +2389,8 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html">Storage</a></td>
-          <td>An abstract class that describes EnergyAssets that can store energy. </td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Producer.html">Producer</a></td>
+          <td>An abstract class that describes EnergyAssets that can produce energy. </td>
         </tr>
       </table>
     </div></div>
