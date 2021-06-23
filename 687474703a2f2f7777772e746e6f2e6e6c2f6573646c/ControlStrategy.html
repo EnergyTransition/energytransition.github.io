@@ -27,15 +27,15 @@
     <div id="nsd_12h_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Defines a control strategy for a specific asset</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="828,279,929,327"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="515,42,627,90"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="517,42,618,90"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="370,42,482,90"/>
 <area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="32,279,147,327"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)" alt="" coords="676,279,793,327"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="512,150,629,198"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="346,279,465,327"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="Control strategy specifying that an asset is driven by the demand of one of the output ports" alt="" coords="183,279,311,327"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="Control strategy that specifies a max power at which the production is curtailed" alt="" coords="501,272,641,333"/>
-<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="965,258,1071,347"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="438,150,555,198"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)" alt="" coords="676,279,793,327"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="358,279,477,327"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="Control strategy specifying that an asset is driven by the demand of one of the output ports" alt="" coords="513,279,641,327"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="Control strategy that specifies a max power at which the production is curtailed" alt="" coords="183,272,323,333"/>
+<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="829,258,935,347"/>
 </map>
 </div>
     <div id="nsd_12h_tab_1" class="tab-pane">
@@ -801,8 +801,8 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html">DrivenByDemand</a></td>
-          <td>Control strategy specifying that an asset is driven by the demand of one of the output ports</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html">CurtailmentStrategy</a></td>
+          <td>Control strategy that specifies a max power at which the production is curtailed</td>
         </tr>
         <tr>
           <td>
@@ -811,8 +811,8 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html">CurtailmentStrategy</a></td>
-          <td>Control strategy that specifies a max power at which the production is curtailed</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html">DrivenByDemand</a></td>
+          <td>Control strategy specifying that an asset is driven by the demand of one of the output ports</td>
         </tr>
         <tr>
           <td>
