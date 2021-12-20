@@ -24,10 +24,11 @@
     <div id="nsd_2q9_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Describes the relation between one of the ports of an asset (the mainPort) and all other ports using a specific ratio. Can be used for conversion assets to specify how much of the carrier on the InPorts is required to produce an x amount of the carrier on the OutPort. </p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/InputOutputRelation.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PortRelation.html" title="Specifies the relation between a port and the main port using a specific ratio." alt="" coords="32,305,132,366"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/InputOutputRelation.html" title="Describes the relation between one of the ports of an asset (the mainPort) and all other ports using a specific ratio. " alt="" coords="73,179,214,227"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBehaviour.html" title="Abstract class for specification of the (dynamic) behaviour of an asset" alt="" coords="77,42,210,117"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="73,445,215,548"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PortRelation.html" title="Specifies the relation between a port and the main port using a specific ratio." alt="" coords="156,305,256,366"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/InputOutputRelation.html" title="Describes the relation between one of the ports of an asset (the mainPort) and all other ports using a specific ratio. " alt="" coords="135,179,276,227"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html" title="Abstract class to describe QuantityAndUnitTypes or references to these" alt="" coords="235,472,401,520"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBehaviour.html" title="Abstract class for specification of the (dynamic) behaviour of an asset" alt="" coords="139,42,272,117"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="41,445,183,548"/>
 </map>
 </div>
     <div id="nsd_2q9_tab_1" class="tab-pane">
@@ -269,11 +270,99 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_2qf_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2qd_accordion" href="#nsd_2qf_collapse_collapse" aria-expanded="false" aria-controls="nsd_2qf_collapse_collapse"><b>mainPortRelation</b> : PortRelation - <I>relation between the main port and an other port</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2qd_accordion" href="#nsd_2qf_collapse_collapse" aria-expanded="false" aria-controls="nsd_2qf_collapse_collapse"><b>mainPortQuantityAndUnit</b> : AbstractQuantityAndUnit - <I>Quantity and unit information related to the main port in the InputOutputRelation</I></a>
             </h4>
           </div>
           <div id="nsd_2qf_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2qf_collapse_panel_body" class="panel-body"><p>relation between the main port and an other port</p>
+            <div id="nsd_2qf_collapse_panel_body" class="panel-body"><p>Quantity and unit information related to the main port in the InputOutputRelation</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractQuantityAndUnit</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_2qg_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_2qd_accordion" href="#nsd_2qg_collapse_collapse" aria-expanded="false" aria-controls="nsd_2qg_collapse_collapse"><b>mainPortRelation</b> : PortRelation - <I>relation between the main port and an other port</I></a>
+            </h4>
+          </div>
+          <div id="nsd_2qg_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2qg_collapse_panel_body" class="panel-body"><p>relation between the main port and an other port</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>

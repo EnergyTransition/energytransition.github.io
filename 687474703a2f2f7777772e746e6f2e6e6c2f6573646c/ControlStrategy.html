@@ -27,15 +27,15 @@
     <div id="nsd_16a_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Defines a control strategy for a specific asset</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="969,279,1070,327"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="525,42,637,90"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="523,279,638,327"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="522,150,639,198"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)" alt="" coords="32,279,149,327"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="673,279,792,327"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="Control strategy specifying that an asset is driven by the demand of one of the output ports" alt="" coords="185,279,313,327"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="Control strategy that specifies a max power at which the production is curtailed" alt="" coords="348,272,488,333"/>
-<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="828,258,934,347"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyAsset.html" title="An abstract class that describes a connectable Asset using ports. " alt="" coords="968,279,1069,327"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyService.html" title="Abstract class to represent logical entities in the energy system, e.g. demand response services, energy markets, etc." alt="" coords="511,42,623,90"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="666,279,781,327"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html" title="Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)" alt="" coords="816,279,933,327"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ControlStrategy.html" title="Defines a control strategy for a specific asset" alt="" coords="508,150,625,198"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="348,279,467,327"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html" title="Control strategy specifying that an asset is driven by the demand of one of the output ports" alt="" coords="503,279,631,327"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html" title="Control strategy that specifies a max power at which the production is curtailed" alt="" coords="32,272,172,333"/>
+<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="207,258,313,347"/>
 </map>
 </div>
     <div id="nsd_16a_tab_1" class="tab-pane">
@@ -796,23 +796,13 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html">DrivenBySupply</a></td>
-          <td>Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)</td>
-        </tr>
-        <tr>
-          <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html">DrivenByDemand</a></td>
-          <td>Control strategy specifying that an asset is driven by the demand of one of the output ports</td>
-        </tr>
-        <tr>
-          <td>
 <a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CurtailmentStrategy.html">CurtailmentStrategy</a></td>
           <td>Control strategy that specifies a max power at which the production is curtailed</td>
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html">DrivenByProfile</a></td>
-          <td>Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html">PIDController</a></td>
+          <td>Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)</td>
         </tr>
         <tr>
           <td>
@@ -821,8 +811,18 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html">PIDController</a></td>
-          <td>Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByDemand.html">DrivenByDemand</a></td>
+          <td>Control strategy specifying that an asset is driven by the demand of one of the output ports</td>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html">DrivenByProfile</a></td>
+          <td>Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)</td>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenBySupply.html">DrivenBySupply</a></td>
+          <td>Control strategy specifying that an asset is driven by the supply of one of the input ports (used in ESDL-based simulation tools)</td>
         </tr>
       </table>
     </div></div>
