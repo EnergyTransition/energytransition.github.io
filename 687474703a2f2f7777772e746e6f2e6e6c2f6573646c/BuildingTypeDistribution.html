@@ -6,40 +6,40 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_sj_tab_0" data-toggle="tab">Documentation</a>
+      <a href="#nsd_sn_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
-      <a href="#nsd_sj_tab_1" data-toggle="tab">
+      <a href="#nsd_sn_tab_1" data-toggle="tab">
 <img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
     </li>
     <li>
-      <a href="#nsd_sj_tab_2" data-toggle="tab">
+      <a href="#nsd_sn_tab_2" data-toggle="tab">
 <img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
     </li>
     <li>
-      <a href="#nsd_sj_tab_3" data-toggle="tab">Supertypes</a>
+      <a href="#nsd_sn_tab_3" data-toggle="tab">Supertypes</a>
     </li>
   </ul>
   <div class="tab-content">
-    <div id="nsd_sj_tab_0" class="tab-pane active">
+    <div id="nsd_sn_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Specifies the way the building type is distributed in this area (e.g. Utility, Residential), specifing the percentage of buildings per type.</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" title="Specifies the way the building type is distributed in this area (e.g. Utility, Residential), specifing the percentage of buildings per type." alt="" coords="93,196,259,244"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeDistribution.html" title="Specifies the way the building type is distributed in this area (e.g. Utility, Residential), specifing the percentage of buildings per type." alt="" coords="109,196,275,244"/>
 <area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/SpecificLabelDistribution.html" title="Abstract class to define a distribution with labels" alt="" coords="207,56,377,104"/>
 <area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AggregatedBuilding.html" title="Represents more than one building aggregated into one entity. " alt="" coords="32,42,172,117"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypePercentage.html" title="Specifies the percentage of the selected building type" alt="" coords="93,322,259,397"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeBin.html" title="Defines a bin for a building type with a percentage, used in BuildingTypeDistribution" alt="" coords="111,322,273,397"/>
 </map>
 </div>
-    <div id="nsd_sj_tab_1" class="tab-pane">
-      <div id="nsd_sk_accordion" role="tablist" class="panel-group">
+    <div id="nsd_sn_tab_1" class="tab-pane">
+      <div id="nsd_so_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_sl_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_sp_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_sk_accordion" href="#nsd_sl_collapse_collapse" aria-expanded="false" aria-controls="nsd_sl_collapse_collapse"><b>name</b> : EString (GenericDistribution) </a>
+              <a data-toggle="collapse" data-parent="#nsd_so_accordion" href="#nsd_sp_collapse_collapse" aria-expanded="false" aria-controls="nsd_sp_collapse_collapse"><b>name</b> : EString (GenericDistribution) </a>
             </h4>
           </div>
-          <div id="nsd_sl_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_sl_collapse_panel_body" class="panel-body">
+          <div id="nsd_sp_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_sp_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -107,22 +107,22 @@
         </div>
       </div>
     </div>
-    <div id="nsd_sj_tab_2" class="tab-pane">
-      <div id="nsd_sm_accordion" role="tablist" class="panel-group">
+    <div id="nsd_sn_tab_2" class="tab-pane">
+      <div id="nsd_sq_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_sn_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_sr_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_sm_accordion" href="#nsd_sn_collapse_collapse" aria-expanded="false" aria-controls="nsd_sn_collapse_collapse"><b>buildingTypePercentage</b> : BuildingTypePercentage - <I>The distribution in percentages</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_sq_accordion" href="#nsd_sr_collapse_collapse" aria-expanded="false" aria-controls="nsd_sr_collapse_collapse"><b>bin</b> : BuildingTypeBin - <I>The collection of bins in the distribution</I></a>
             </h4>
           </div>
-          <div id="nsd_sn_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_sn_collapse_panel_body" class="panel-body"><p>The distribution in percentages</p>
+          <div id="nsd_sr_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_sr_collapse_panel_body" class="panel-body"><p>The collection of bins in the distribution</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
                   <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypePercentage.html">
-<img src="resources/images/EClass.gif" style="margin-right:5px"/>BuildingTypePercentage</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingTypeBin.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>BuildingTypeBin</a></td>
                 </tr>
                 <tr>
                   <th style="align:left">Cardinality</th>
@@ -199,7 +199,7 @@
         </div>
       </div>
     </div>
-    <div id="nsd_sj_tab_3" class="tab-pane">
+    <div id="nsd_sn_tab_3" class="tab-pane">
       <table class="table table-bordered">
         <tr class="info">
           <th>Name</th>
