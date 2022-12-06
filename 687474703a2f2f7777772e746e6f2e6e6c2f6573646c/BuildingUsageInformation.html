@@ -21,9 +21,9 @@
     <div id="nsd_wj_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Part of Energy System Information that specifies generic building usage information that can be referenced from multiple individual buildings</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingUsageInformation.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingUsage.html" title="Collection of information about the usage of a building, such as temperature set points and opening hours." alt="" coords="63,322,177,397"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingUsage.html" title="Collection of information about the usage of a building, such as temperature set points and opening hours." alt="" coords="63,350,177,425"/>
 <area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergySystemInformation.html" title="Describes reusable information of the energy system, that other classes can refer to in this energy system, such as carriers, profiles, data sources, quantity and units." alt="" coords="32,42,205,103"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingUsageInformation.html" title="Part of Energy System Information that specifies generic building usage information that can be referenced from multiple individual buildings" alt="" coords="32,182,208,243"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BuildingUsageInformation.html" title="Part of Energy System Information that specifies generic building usage information that can be referenced from multiple individual buildings" alt="" coords="32,182,208,271"/>
 </map>
 </div>
     <div id="nsd_wj_tab_1" class="tab-pane">
@@ -31,11 +31,78 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_wl_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_wk_accordion" href="#nsd_wl_collapse_collapse" aria-expanded="false" aria-controls="nsd_wl_collapse_collapse"><b>id</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_wk_accordion" href="#nsd_wl_collapse_collapse" aria-expanded="false" aria-controls="nsd_wl_collapse_collapse"><b>description</b> : EString</a>
             </h4>
           </div>
           <div id="nsd_wl_collapse_collapse" class="panel-collapse collapse">
             <div id="nsd_wl_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_wm_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_wk_accordion" href="#nsd_wm_collapse_collapse" aria-expanded="false" aria-controls="nsd_wm_collapse_collapse"><b>id</b> : EString</a>
+            </h4>
+          </div>
+          <div id="nsd_wm_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_wm_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -97,18 +164,85 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="nsd_wj_tab_2" class="tab-pane">
-      <div id="nsd_wm_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
           <div role="tab" id="nsd_wn_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_wm_accordion" href="#nsd_wn_collapse_collapse" aria-expanded="false" aria-controls="nsd_wn_collapse_collapse"><b>buildingUsage</b> : BuildingUsage - <I>A reference to building usage of a building</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_wk_accordion" href="#nsd_wn_collapse_collapse" aria-expanded="false" aria-controls="nsd_wn_collapse_collapse"><b>name</b> : EString</a>
             </h4>
           </div>
           <div id="nsd_wn_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_wn_collapse_panel_body" class="panel-body"><p>A reference to building usage of a building</p>
+            <div id="nsd_wn_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_wj_tab_2" class="tab-pane">
+      <div id="nsd_wo_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_wp_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_wo_accordion" href="#nsd_wp_collapse_collapse" aria-expanded="false" aria-controls="nsd_wp_collapse_collapse"><b>buildingUsage</b> : BuildingUsage - <I>A reference to building usage of a building</I></a>
+            </h4>
+          </div>
+          <div id="nsd_wp_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_wp_collapse_panel_body" class="panel-body"><p>A reference to building usage of a building</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>

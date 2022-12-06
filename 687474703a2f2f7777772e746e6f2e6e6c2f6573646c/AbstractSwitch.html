@@ -27,10 +27,10 @@
     <div id="nsd_9x_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Abstract class to describe switches such as valve and a circuit breaker</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractSwitch.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractSwitch.html" title="Abstract class to describe switches such as valve and a circuit breaker" alt="" coords="146,178,258,226"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="154,42,249,117"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html" alt="" coords="32,293,187,341"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html" alt="" coords="222,286,367,347"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractSwitch.html" title="Abstract class to describe switches such as valve and a circuit breaker" alt="" coords="141,178,253,226"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="149,42,244,117"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html" alt="" coords="212,293,367,341"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html" alt="" coords="32,286,177,347"/>
 </map>
 </div>
     <div id="nsd_9x_tab_1" class="tab-pane">
@@ -176,7 +176,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">-</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -254,11 +264,11 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_a2_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_9y_accordion" href="#nsd_a2_collapse_collapse" aria-expanded="false" aria-controls="nsd_a2_collapse_collapse"><b>capacity</b> : EDouble (Transport)  - <I>The capacity of the transport asset in Joules</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_9y_accordion" href="#nsd_a2_collapse_collapse" aria-expanded="false" aria-controls="nsd_a2_collapse_collapse"><b>capacity</b> : EDouble (Transport)  - <I>The capacity of the transport asset in Watts (as opposed to the Storage capacity, which is in Joules).</I></a>
             </h4>
           </div>
           <div id="nsd_a2_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_a2_collapse_panel_body" class="panel-body"><p>The capacity of the transport asset in Joules </p>
+            <div id="nsd_a2_collapse_panel_body" class="panel-body"><p>The capacity of the transport asset in Watts (as opposed to the Storage capacity, which is in Joules). </p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -328,7 +338,7 @@
   <table class="table table-bordered">
     <tr>
       <td>unit</td>
-      <td style="white-space:pre-wrap;font-family:monospace">J</td>
+      <td style="white-space:pre-wrap;font-family:monospace">W</td>
     </tr>
   </table></div></div>
           </div>
@@ -556,7 +566,7 @@
             </h4>
           </div>
           <div id="nsd_a6_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_a6_collapse_panel_body" class="panel-body"><p>The efficiency of the transport asset. Allows to specify transmission losses as a percentage</p>
+            <div id="nsd_a6_collapse_panel_body" class="panel-body"><p>The efficiency of the transport asset. Allows to specify transmission losses as a ratio</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -618,7 +628,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">-</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -2820,12 +2840,12 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html">AbstractPassiveSwitch</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html">AbstractActiveSwitch</a></td>
           <td></td>
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractActiveSwitch.html">AbstractActiveSwitch</a></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractPassiveSwitch.html">AbstractPassiveSwitch</a></td>
           <td></td>
         </tr>
       </table>

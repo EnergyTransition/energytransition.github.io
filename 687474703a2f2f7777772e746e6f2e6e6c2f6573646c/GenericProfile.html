@@ -6,57 +6,57 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_2fo_tab_0" data-toggle="tab">Documentation</a>
+      <a href="#nsd_2he_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
-      <a href="#nsd_2fo_tab_1" data-toggle="tab">
+      <a href="#nsd_2he_tab_1" data-toggle="tab">
 <img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
     </li>
     <li>
-      <a href="#nsd_2fo_tab_2" data-toggle="tab">
+      <a href="#nsd_2he_tab_2" data-toggle="tab">
 <img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
     </li>
     <li>
-      <a href="#nsd_2fo_tab_3" data-toggle="tab">
+      <a href="#nsd_2he_tab_3" data-toggle="tab">
 <img src="resources/images/EOperation.gif" style="margin-right:5px"/> Operations</a>
     </li>
     <li>
-      <a href="#nsd_2fo_tab_4" data-toggle="tab">Subtypes</a>
+      <a href="#nsd_2he_tab_4" data-toggle="tab">Subtypes</a>
     </li>
   </ul>
   <div class="tab-content">
-    <div id="nsd_2fo_tab_0" class="tab-pane active">
+    <div id="nsd_2he_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>All profiles should describe these fields: a name and a ProfileType. There are two different profile types: static, with static values stored in the ESDL model itself. And External, which allows you to refer to an externally defined profile (e.g. in an Energy Information System or a timeseries database)</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Profiles.html" title="Container for profiles in the Energy System Information where other profiles can refer to" alt="" coords="3661,390,3735,452"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StaticProfile.html" title="Stores the profile in the ESDL model itself, in contrast with an external profile, which refers to an external source for a profile" alt="" coords="1839,802,1936,850"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyMarket.html" title="Defines an EnergyMarket of the energy system. " alt="" coords="218,195,324,243"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html" title="Abstract class to define the carrier of energy, e.g. a energy carrier or a commodity (such as electricity)" alt="" coords="65,383,135,459"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="3371,42,3486,90"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="196,397,315,445"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html" title="Describes the costs to acquire, install and maintain a certain asset." alt="" coords="1309,390,1429,452"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileReference.html" title="Used to refer to profiles defined in the Energy System Information section" alt="" coords="1959,932,2083,993"/>
-<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html" title="Abstract class to describe QuantityAndUnitTypes or references to these" alt="" coords="1638,802,1804,850"/>
-<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html" title="Abstract class to describe data sources or references to data sources" alt="" coords="805,795,947,856"/>
-<area shape="rect" id="id11" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnvironmentalProfiles.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnvironmentalProfiles.html" alt="" coords="2960,390,3113,452"/>
-<area shape="rect" id="id12" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="2501,376,2607,466"/>
-<area shape="rect" id="id13" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html" title="ExternalProfile allows to refer to an externally defined profile. " alt="" coords="1972,781,2084,870"/>
-<area shape="rect" id="id14" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="3278,168,3420,271"/>
-<area shape="rect" id="id15" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PowerPlant.html" title="Defines an electricity generating plant" alt="" coords="3492,356,3626,487"/>
-<area shape="rect" id="id16" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html" title="An abstract class that describes EnergyAssets that can store energy. " alt="" coords="2322,349,2465,493"/>
-<area shape="rect" id="id17" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html" title="All profiles should describe these fields: a name and a ProfileType. " alt="" coords="1781,572,2165,703"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StaticProfile.html" title="Stores the profile in the ESDL model itself, in contrast with an external profile, which refers to an external source for a profile" alt="" coords="1616,802,1713,850"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyMarket.html" title="Defines an EnergyMarket of the energy system. " alt="" coords="3442,195,3548,243"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Carrier.html" title="Abstract class to define the carrier of energy, e.g. a energy carrier or a commodity (such as electricity)" alt="" coords="32,383,102,459"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DrivenByProfile.html" title="Control strategy specifying that an asset is driven by a profile specified in one of the ports (used in ESDL-based simulation tools)" alt="" coords="3478,42,3593,90"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/StorageStrategy.html" title="Control strategy specifying that a storage asset is driven by two profiles specifying the marginal cost to define its charging and discharging behavior (used in ESDL-based simulation tools)" alt="" coords="632,397,751,445"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileReference.html" title="Used to refer to profiles defined in the Energy System Information section" alt="" coords="1663,932,1787,993"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html" title="Abstract class to describe QuantityAndUnitTypes or references to these" alt="" coords="2021,802,2187,850"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Profiles.html" title="Container for profiles in the Energy System Information where other profiles can refer to" alt="" coords="3639,376,3735,466"/>
+<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html" title="Abstract class to describe data sources or references to data sources" alt="" coords="392,795,534,856"/>
+<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PIDController.html" title="Control strategy specifying that an asset is driven by a PID controller (used in ESDL-based simulation tools)" alt="" coords="137,376,243,466"/>
+<area shape="rect" id="id11" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html" title="ExternalProfile allows to refer to an externally defined profile. " alt="" coords="1874,781,1986,870"/>
+<area shape="rect" id="id12" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html" title="Describes the costs to acquire, install and maintain a certain asset." alt="" coords="2465,376,2585,466"/>
+<area shape="rect" id="id13" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnvironmentalProfiles.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnvironmentalProfiles.html" alt="" coords="1054,376,1207,466"/>
+<area shape="rect" id="id14" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Port.html" title="Ports allow connections between EnergyAssets. " alt="" coords="3265,168,3407,271"/>
+<area shape="rect" id="id15" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PowerPlant.html" title="Defines an electricity generating plant" alt="" coords="278,349,419,493"/>
+<area shape="rect" id="id16" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Storage.html" title="An abstract class that describes EnergyAssets that can store energy. " alt="" coords="454,349,597,493"/>
+<area shape="rect" id="id17" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html" title="All profiles should describe these fields: a name and a ProfileType. " alt="" coords="1631,572,2015,703"/>
 </map>
 </div>
-    <div id="nsd_2fo_tab_1" class="tab-pane">
-      <div id="nsd_2fp_accordion" role="tablist" class="panel-group">
+    <div id="nsd_2he_tab_1" class="tab-pane">
+      <div id="nsd_2hf_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fq_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hg_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fp_accordion" href="#nsd_2fq_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fq_collapse_collapse"><b>id</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_2hf_accordion" href="#nsd_2hg_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hg_collapse_collapse"><b>id</b> : EString</a>
             </h4>
           </div>
-          <div id="nsd_2fq_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fq_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hg_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hg_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -119,13 +119,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fr_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hh_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fp_accordion" href="#nsd_2fr_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fr_collapse_collapse"><b>interpolationMethod</b> : InterpolationMethodEnum - <I>Type of interpolation between elements in the profile. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2hf_accordion" href="#nsd_2hh_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hh_collapse_collapse"><b>interpolationMethod</b> : InterpolationMethodEnum - <I>Type of interpolation between elements in the profile. </I></a>
             </h4>
           </div>
-          <div id="nsd_2fr_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fr_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hh_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hh_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -186,13 +186,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fs_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hi_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fp_accordion" href="#nsd_2fs_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fs_collapse_collapse"><b>name</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_2hf_accordion" href="#nsd_2hi_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hi_collapse_collapse"><b>name</b> : EString</a>
             </h4>
           </div>
-          <div id="nsd_2fs_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fs_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hi_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hi_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -253,13 +253,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2ft_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hj_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fp_accordion" href="#nsd_2ft_collapse_collapse" aria-expanded="false" aria-controls="nsd_2ft_collapse_collapse"><b>profileType</b> : ProfileTypeEnum - <I>(deprecated in future version, to be replaced with Quantity and Units)</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2hf_accordion" href="#nsd_2hj_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hj_collapse_collapse"><b>profileType</b> : ProfileTypeEnum - <I>(deprecated in future version, to be replaced with Quantity and Units)</I></a>
             </h4>
           </div>
-          <div id="nsd_2ft_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2ft_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hj_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hj_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -321,16 +321,16 @@
         </div>
       </div>
     </div>
-    <div id="nsd_2fo_tab_2" class="tab-pane">
-      <div id="nsd_2fu_accordion" role="tablist" class="panel-group">
+    <div id="nsd_2he_tab_2" class="tab-pane">
+      <div id="nsd_2hk_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fv_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hl_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fu_accordion" href="#nsd_2fv_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fv_collapse_collapse"><b>dataSource</b> : AbstractDataSource - <I>Abstract class to describe data sources or references to data sources</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2hk_accordion" href="#nsd_2hl_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hl_collapse_collapse"><b>dataSource</b> : AbstractDataSource - <I>Abstract class to describe data sources or references to data sources</I></a>
             </h4>
           </div>
-          <div id="nsd_2fv_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fv_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hl_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hl_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -413,13 +413,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fw_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hm_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fu_accordion" href="#nsd_2fw_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fw_collapse_collapse"><b>profileQuantityAndUnit</b> : AbstractQuantityAndUnit - <I>Abstract class to describe QuantityAndUnitTypes or references to these</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2hk_accordion" href="#nsd_2hm_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hm_collapse_collapse"><b>profileQuantityAndUnit</b> : AbstractQuantityAndUnit - <I>Abstract class to describe QuantityAndUnitTypes or references to these</I></a>
             </h4>
           </div>
-          <div id="nsd_2fw_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fw_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hm_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hm_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -503,16 +503,16 @@
         </div>
       </div>
     </div>
-    <div id="nsd_2fo_tab_3" class="tab-pane">
-      <div id="nsd_2fx_accordion" role="tablist" class="panel-group">
+    <div id="nsd_2he_tab_3" class="tab-pane">
+      <div id="nsd_2hn_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fy_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2ho_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fx_accordion" href="#nsd_2fy_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fy_collapse_collapse"><b>getProfile</b> : ProfileElement</a>
+              <a data-toggle="collapse" data-parent="#nsd_2hn_accordion" href="#nsd_2ho_collapse_collapse" aria-expanded="false" aria-controls="nsd_2ho_collapse_collapse"><b>getProfile</b> : ProfileElement</a>
             </h4>
           </div>
-          <div id="nsd_2fy_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fy_collapse_panel_body" class="panel-body">
+          <div id="nsd_2ho_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2ho_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -551,13 +551,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_2fz_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_2hp_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2fx_accordion" href="#nsd_2fz_collapse_collapse" aria-expanded="false" aria-controls="nsd_2fz_collapse_collapse"><b>setProfile</b> : EBoolean</a>
+              <a data-toggle="collapse" data-parent="#nsd_2hn_accordion" href="#nsd_2hp_collapse_collapse" aria-expanded="false" aria-controls="nsd_2hp_collapse_collapse"><b>setProfile</b> : EBoolean</a>
             </h4>
           </div>
-          <div id="nsd_2fz_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_2fz_collapse_panel_body" class="panel-body">
+          <div id="nsd_2hp_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_2hp_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -591,7 +591,7 @@
         </div>
       </div>
     </div>
-    <div id="nsd_2fo_tab_4" class="tab-pane">
+    <div id="nsd_2he_tab_4" class="tab-pane">
       <table class="table table-bordered">
         <tr class="info">
           <th>Name</th>

@@ -28,12 +28,12 @@
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Abstract class to describe transformers, such as Heat exchangers, transformers and pumps</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractTransformer.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
 <area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Compressor.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Compressor.html" alt="" coords="32,327,142,389"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractTransformer.html" title="Abstract class to describe transformers, such as Heat exchangers, transformers and pumps" alt="" coords="362,178,506,226"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="386,42,481,117"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html" alt="" coords="739,327,904,389"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transformer.html" title="Electrical transformer between different voltage levels" alt="" coords="177,320,312,396"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Pump.html" title="Defines a pump, e.g. in a water or heat network" alt="" coords="555,300,704,417"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HeatExchange.html" title="Exchange heat between two circuits" alt="" coords="347,286,520,430"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractTransformer.html" title="Abstract class to describe transformers, such as Heat exchangers, transformers and pumps" alt="" coords="380,178,524,226"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transport.html" title="An abstract class that describes EnergyAssets that can transport energy. " alt="" coords="404,42,499,117"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html" alt="" coords="177,327,342,389"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transformer.html" title="Electrical transformer between different voltage levels" alt="" coords="769,320,904,396"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Pump.html" title="Defines a pump, e.g. in a water or heat network" alt="" coords="377,300,526,417"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HeatExchange.html" title="Exchange heat between two circuits" alt="" coords="561,286,734,430"/>
 </map>
 </div>
     <div id="nsd_b2_tab_1" class="tab-pane">
@@ -179,7 +179,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">-</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -257,11 +267,11 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_b7_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_b3_accordion" href="#nsd_b7_collapse_collapse" aria-expanded="false" aria-controls="nsd_b7_collapse_collapse"><b>capacity</b> : EDouble (Transport)  - <I>The capacity of the transport asset in Joules</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_b3_accordion" href="#nsd_b7_collapse_collapse" aria-expanded="false" aria-controls="nsd_b7_collapse_collapse"><b>capacity</b> : EDouble (Transport)  - <I>The capacity of the transport asset in Watts (as opposed to the Storage capacity, which is in Joules).</I></a>
             </h4>
           </div>
           <div id="nsd_b7_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_b7_collapse_panel_body" class="panel-body"><p>The capacity of the transport asset in Joules </p>
+            <div id="nsd_b7_collapse_panel_body" class="panel-body"><p>The capacity of the transport asset in Watts (as opposed to the Storage capacity, which is in Joules). </p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -331,7 +341,7 @@
   <table class="table table-bordered">
     <tr>
       <td>unit</td>
-      <td style="white-space:pre-wrap;font-family:monospace">J</td>
+      <td style="white-space:pre-wrap;font-family:monospace">W</td>
     </tr>
   </table></div></div>
           </div>
@@ -559,7 +569,7 @@
             </h4>
           </div>
           <div id="nsd_bb_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_bb_collapse_panel_body" class="panel-body"><p>The efficiency of the transport asset. Allows to specify transmission losses as a percentage</p>
+            <div id="nsd_bb_collapse_panel_body" class="panel-body"><p>The efficiency of the transport asset. Allows to specify transmission losses as a ratio</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -621,7 +631,17 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table></div>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">-</td>
+    </tr>
+  </table></div></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -2828,13 +2848,8 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transformer.html">Transformer</a></td>
-          <td>Electrical transformer between different voltage levels</td>
-        </tr>
-        <tr>
-          <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HeatExchange.html">HeatExchange</a></td>
-          <td>Exchange heat between two circuits</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html">PressureReducingValve</a></td>
+          <td></td>
         </tr>
         <tr>
           <td>
@@ -2843,8 +2858,13 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/PressureReducingValve.html">PressureReducingValve</a></td>
-          <td></td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HeatExchange.html">HeatExchange</a></td>
+          <td>Exchange heat between two circuits</td>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Transformer.html">Transformer</a></td>
+          <td>Electrical transformer between different voltage levels</td>
         </tr>
       </table>
     </div></div>
