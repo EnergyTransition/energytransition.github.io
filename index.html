@@ -16,13 +16,12 @@
 <link rel="stylesheet" href="resources/highlight/styles/github.css"/>
 <link rel="stylesheet" href="resources/css/github-markdown.css"/>
 <link rel="stylesheet" href="resources/jstree/themes/default/style.min.css"/>
-<script src="resources/js/jquery-1.12.1.min.js"></script>
+<script src="resources/js/jquery-3.6.0.min.js"></script>
 <script src="resources/js/underscore-min.js"></script>
 <script src="resources/js/backbone-min.js"></script>
 <script src="resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="resources/js/d3.min.js"></script>
-<script src="resources/js/c3.min.js"></script>
 <script src="resources/js/require.js"></script>
+<script src="resources/js/sanitize-url.js"></script>
 <script>
 require.config({
     baseUrl: 'resources/js',
@@ -37,8 +36,9 @@ require.config({
 
 <script>
 
-	// Loads url to element specified by selector. Dims target and displays "Loaging...", reports errors.   	
+	// Loads url to element specified by selector. Dims target and displays "Loading...", reports errors.   	
 	function nsdLoad(selector, url, data) {
+		var s_url = encodeURIComponent(sanitizeUrl(url));
 		var target = $(selector);
 		if (target.length) {
 			var loadingImage = "<table style='width: 100%; height:"+target.height()+"px; background:#EEE'>"
@@ -51,17 +51,17 @@ require.config({
 				+ "</td>" + "</tr>" + "</table>";
 	
 			target.html(loadingImage);
-			target.load(url, data, function(responseText, textStatus, req) {									
+			target.load(s_url, data, function(responseText, textStatus, req) {									
 				if (textStatus == "error") {
 					if (responseText) {
 						var errorMessage = '<div class="panel panel-danger">'
 						+ '<div class="panel-heading">'
-						+ '<h3 class="panel-title">Error loading <b>' + url
+						+ '<h3 class="panel-title">Error loading <b>' + s_url
 						+ '</b></h3>' + '</div>' + '<div class="panel-body"><b>' + responseText
 						+ '</div>' + '</div>'
 						target.html(errorMessage);
 					} else {
-						target.html("<div class=\"alert alert-danger\">Error loading <b>"+url+"</b></div>");
+						target.html("<div class=\"alert alert-danger\">Error loading <b>"+s_url+"</b></div>");
 					}
 				}
 			});
@@ -70,9 +70,10 @@ require.config({
 		}
 	}
 	
-	// Replaces element(s) specified by selector with content loaded from url. Dims target and displays "Loaging...", reports errors.   	
+	// Replaces element(s) specified by selector with content loaded from url. Dims target and displays "Loading...", reports errors.   	
 	function nsdReplaceWith(selector, url, data) {
 		var target = $(selector);
+		var s_url = encodeURIComponent(sanitizeUrl(url));
 		if (target.length) {
 			var loadingImage = "<table style='width: 100%; height:"+target.height()+"px; background:#EEE'>"
 				+ "<tr valign='middle'>" + "<td align='center'>"
@@ -85,17 +86,17 @@ require.config({
 	
 			target.html(loadingImage);
 			
-			jQuery.get(url, data, function(data, textStatus, req) {									
+			jQuery.get(s_url, data, function(data, textStatus, req) {									
 				if (textStatus == "error") {
 					if (data) {
 						var errorMessage = '<div class="panel panel-danger">'
 						+ '<div class="panel-heading">'
-						+ '<h3 class="panel-title">Error loading <b>' + url
+						+ '<h3 class="panel-title">Error loading <b>' + s_url
 						+ '</b></h3>' + '</div>' + '<div class="panel-body"><b>' + data
 						+ '</div>' + '</div>'
 						target.html(errorMessage);
 					} else {
-						target.html("<div class=\"alert alert-danger\">Error loading <b>"+url+"</b></div>");
+						target.html("<div class=\"alert alert-danger\">Error loading <b>"+s_url+"</b></div>");
 					}
 				} else {
 					target.replaceWith(data);
