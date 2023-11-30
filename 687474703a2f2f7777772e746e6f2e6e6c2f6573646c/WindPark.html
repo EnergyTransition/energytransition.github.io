@@ -24,7 +24,7 @@
     <div id="nsd_4un_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Defines a wind park of multiple turbines</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/WindPark.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/WindPark.html" title="Defines a wind park of multiple turbines" alt="" coords="63,192,179,253"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/WindPark.html" title="Defines a wind park of multiple turbines" alt="" coords="63,192,179,267"/>
 <area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/WindTurbine.html" title="Describes an individual wind turbine. " alt="" coords="48,42,194,131"/>
 </map>
 </div>
@@ -1952,11 +1952,87 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_4ve_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4uo_accordion" href="#nsd_4ve_collapse_collapse" aria-expanded="false" aria-controls="nsd_4ve_collapse_collapse"><b>type</b> : WindTurbineTypeEnum (WindTurbine)  - <I>Type of wind turbine. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4uo_accordion" href="#nsd_4ve_collapse_collapse" aria-expanded="false" aria-controls="nsd_4ve_collapse_collapse"><b>turbinePower</b> : EDouble - <I>The power of an individual wind turbine in the wind park (in Watt). </I></a>
             </h4>
           </div>
           <div id="nsd_4ve_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4ve_collapse_panel_body" class="panel-body">
+            <div id="nsd_4ve_collapse_panel_body" class="panel-body"><p>The power of an individual wind turbine in the wind park (in Watt). To differentiate from the total installed power from the wind park as a whole.</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDouble.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDouble</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">W</td>
+    </tr>
+  </table></div></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_4vf_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_4uo_accordion" href="#nsd_4vf_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vf_collapse_collapse"><b>type</b> : WindTurbineTypeEnum (WindTurbine)  - <I>Type of wind turbine. </I></a>
+            </h4>
+          </div>
+          <div id="nsd_4vf_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vf_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2025,15 +2101,15 @@
       </div>
     </div>
     <div id="nsd_4un_tab_2" class="tab-pane">
-      <div id="nsd_4vf_accordion" role="tablist" class="panel-group">
+      <div id="nsd_4vg_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vg_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vh_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vg_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vg_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vh_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vh_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
             </h4>
           </div>
-          <div id="nsd_4vg_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vg_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vh_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vh_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2122,13 +2198,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vh_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vi_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vh_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vh_collapse_collapse"><b>area</b> : Area (Asset)  - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vi_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vi_collapse_collapse"><b>area</b> : Area (Asset)  - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
             </h4>
           </div>
-          <div id="nsd_4vh_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vh_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vi_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vi_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2218,13 +2294,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vi_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vj_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vi_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vi_collapse_collapse"><b>behaviour</b> : AbstractBehaviour (EnergyAsset)  - <I>parameter that allows to specify the (dynamic) behaviour of this asset</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vj_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vj_collapse_collapse"><b>behaviour</b> : AbstractBehaviour (EnergyAsset)  - <I>parameter that allows to specify the (dynamic) behaviour of this asset</I></a>
             </h4>
           </div>
-          <div id="nsd_4vi_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vi_collapse_panel_body" class="panel-body"><p>parameter that allows to specify the (dynamic) behaviour of this asset</p>
+          <div id="nsd_4vj_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vj_collapse_panel_body" class="panel-body"><p>parameter that allows to specify the (dynamic) behaviour of this asset</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2312,13 +2388,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vj_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vk_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vj_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vj_collapse_collapse"><b>bufferDistance</b> : BufferDistance (Asset)  - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vk_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vk_collapse_collapse"><b>bufferDistance</b> : BufferDistance (Asset)  - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
             </h4>
           </div>
-          <div id="nsd_4vj_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vj_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vk_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vk_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2406,13 +2482,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vk_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vl_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vk_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vk_collapse_collapse"><b>constraint</b> : Constraint (Asset)  - <I>Allows to specify constraints for asset attributes.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vl_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vl_collapse_collapse"><b>constraint</b> : Constraint (Asset)  - <I>Allows to specify constraints for asset attributes.</I></a>
             </h4>
           </div>
-          <div id="nsd_4vk_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vk_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vl_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vl_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2501,13 +2577,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vl_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vm_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vl_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vl_collapse_collapse"><b>containingAsset</b> : CompoundAsset (Asset)  - <I>Asset that can contain multiple other assets that belong together. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vm_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vm_collapse_collapse"><b>containingAsset</b> : CompoundAsset (Asset)  - <I>Asset that can contain multiple other assets that belong together. </I></a>
             </h4>
           </div>
-          <div id="nsd_4vl_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vl_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vm_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vm_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2597,13 +2673,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vm_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vn_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vm_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vm_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding (Asset)  - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vn_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vn_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding (Asset)  - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
             </h4>
           </div>
-          <div id="nsd_4vm_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vm_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vn_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vn_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2693,13 +2769,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vn_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vo_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vn_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vn_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset)  - <I>Defines a control strategy for a specific asset</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vo_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vo_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset)  - <I>Defines a control strategy for a specific asset</I></a>
             </h4>
           </div>
-          <div id="nsd_4vn_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vn_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vo_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vo_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2787,13 +2863,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vo_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vp_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vo_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vo_collapse_collapse"><b>costInformation</b> : CostInformation (Asset)  - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vp_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vp_collapse_collapse"><b>costInformation</b> : CostInformation (Asset)  - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
             </h4>
           </div>
-          <div id="nsd_4vo_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vo_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vp_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vp_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2882,13 +2958,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vp_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vq_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vp_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vp_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vq_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vq_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
             </h4>
           </div>
-          <div id="nsd_4vp_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vp_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
+          <div id="nsd_4vq_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vq_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2976,13 +3052,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vq_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vr_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vq_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vq_collapse_collapse"><b>geometry</b> : Geometry (Asset)  - <I>Describes the physical geometry of this asset. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vr_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vr_collapse_collapse"><b>geometry</b> : Geometry (Asset)  - <I>Describes the physical geometry of this asset. </I></a>
             </h4>
           </div>
-          <div id="nsd_4vq_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vq_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
+          <div id="nsd_4vr_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vr_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3070,13 +3146,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vr_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vs_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vr_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vr_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vs_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vs_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
             </h4>
           </div>
-          <div id="nsd_4vr_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vr_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
+          <div id="nsd_4vs_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vs_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3163,13 +3239,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vs_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vt_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vs_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vs_collapse_collapse"><b>material</b> : AbstractMatter (Asset)  - <I>Allows for describing of what material(s) the Asset is made</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vt_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vt_collapse_collapse"><b>material</b> : AbstractMatter (Asset)  - <I>Allows for describing of what material(s) the Asset is made</I></a>
             </h4>
           </div>
-          <div id="nsd_4vs_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vs_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
+          <div id="nsd_4vt_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vt_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3257,13 +3333,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vt_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vu_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vt_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vt_collapse_collapse"><b>port</b> : Port (EnergyAsset)  - <I>Ports allow connections between EnergyAssets. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vu_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vu_collapse_collapse"><b>port</b> : Port (EnergyAsset)  - <I>Ports allow connections between EnergyAssets. </I></a>
             </h4>
           </div>
-          <div id="nsd_4vt_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vt_collapse_panel_body" class="panel-body">
+          <div id="nsd_4vu_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vu_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3353,13 +3429,107 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_4vu_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_4vv_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_4vf_accordion" href="#nsd_4vu_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vu_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vv_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vv_collapse_collapse"><b>powerCurveTable</b> : Table (WindTurbine)  - <I>Table describing the relation between wind speed and produced power</I></a>
             </h4>
           </div>
-          <div id="nsd_4vu_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_4vu_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
+          <div id="nsd_4vv_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vv_collapse_panel_body" class="panel-body"><p>Table describing the relation between wind speed and produced power</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/WindTurbine.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>WindTurbine</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Table.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Table</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_4vw_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_4vg_accordion" href="#nsd_4vw_collapse_collapse" aria-expanded="false" aria-controls="nsd_4vw_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
+            </h4>
+          </div>
+          <div id="nsd_4vw_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_4vw_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
