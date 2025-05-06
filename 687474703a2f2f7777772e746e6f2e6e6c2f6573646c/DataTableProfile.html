@@ -1,0 +1,1275 @@
+
+<script>document.title="EClass DataTableProfile";</script>
+<h2>
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>DataTableProfile</h2>
+<div style="margin-bottom:5px;font-family:monospace"></div>
+<div>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#nsd_1h1_tab_0" data-toggle="tab">Documentation</a>
+    </li>
+    <li>
+      <a href="#nsd_1h1_tab_1" data-toggle="tab">
+<img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
+    </li>
+    <li>
+      <a href="#nsd_1h1_tab_2" data-toggle="tab">
+<img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
+    </li>
+    <li>
+      <a href="#nsd_1h1_tab_3" data-toggle="tab">
+<img src="resources/images/EOperation.gif" style="margin-right:5px"/> Operations</a>
+    </li>
+    <li>
+      <a href="#nsd_1h1_tab_4" data-toggle="tab">Supertypes</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div id="nsd_1h1_tab_0" class="tab-pane active">
+      <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Define timeseries data based on a data table structure, such as relational databases or file formats that store data in a table-like structure such as Parquet or Excel files. The information defined in this data table should be sufficient to build a query using one of the supported database or file types (see AbstractDataConfiguration).</p></div>
+      <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataTableProfile.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html" title="ExternalProfile allows to refer to an externally defined profile. " alt="" coords="65,42,177,131"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataConfiguration.html" title="Defines a data configuration (a file or database configuration) with a name and ID. " alt="" coords="32,388,209,463"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataTableProfile.html" title="Define timeseries data based on a data table structure, such as relational databases or file formats that store data in a table-like structure such as Parquet or Excel files. " alt="" coords="59,193,183,310"/>
+</map>
+</div>
+    <div id="nsd_1h1_tab_1" class="tab-pane">
+      <div id="nsd_1h2_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h3_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h3_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h3_collapse_collapse"><b>columnName</b> : EString - <I>Column in the table to select for data.</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1h3_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h3_collapse_panel_body" class="panel-body"><p>Column in the table to select for data.</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h4_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h4_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h4_collapse_collapse"><b>endDate</b> : EDate (ExternalProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1h4_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h4_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ExternalProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h5_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h5_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h5_collapse_collapse"><b>filter</b> : EString - <I>An optional filter to apply to the data in SQL language (i.e. the WHERE clause).</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1h5_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h5_collapse_panel_body" class="panel-body"><p>An optional filter to apply to the data in SQL language (i.e. the WHERE clause).</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h6_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h6_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h6_collapse_collapse"><b>id</b> : EString (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1h6_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h6_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h7_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h7_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h7_collapse_collapse"><b>interpolationMethod</b> : InterpolationMethodEnum (GenericProfile)  - <I>Type of interpolation between elements in the profile. </I></a>
+            </h4>
+          </div>
+          <div id="nsd_1h7_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h7_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/InterpolationMethodEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>InterpolationMethodEnum</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">UNDEFINED</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h8_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h8_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h8_collapse_collapse"><b>multiplier</b> : EDouble (ExternalProfile)  - <I>A multiplier can be used to scale the supplied external profile by a certain factor (e.g. when using NEDU profiles). </I></a>
+            </h4>
+          </div>
+          <div id="nsd_1h8_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h8_collapse_panel_body" class="panel-body"><p>A multiplier can be used to scale the supplied external profile by a certain factor (e.g. when using NEDU profiles). Default the multiplier is &lsquo;1&rsquo;.</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ExternalProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDouble.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDouble</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">1.0</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1h9_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1h9_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h9_collapse_collapse"><b>name</b> : EString (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1h9_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h9_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1ha_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1ha_collapse_collapse" aria-expanded="false" aria-controls="nsd_1ha_collapse_collapse"><b>profileType</b> : ProfileTypeEnum (GenericProfile)  - <I>(deprecated in future version, to be replaced with Quantity and Units)</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1ha_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1ha_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileTypeEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>ProfileTypeEnum</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">UNDEFINED</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hb_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1hb_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hb_collapse_collapse"><b>schema</b> : EString - <I>The database schema to use (optional, as not all databases support this)</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1hb_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hb_collapse_panel_body" class="panel-body"><p>The database schema to use (optional, as not all databases support this)</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hc_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1hc_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hc_collapse_collapse"><b>startDate</b> : EDate (ExternalProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1hc_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hc_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ExternalProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hd_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1hd_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hd_collapse_collapse"><b>tableName</b> : EString - <I>Name of the table in the database (or sheet of an Excel file) to query.</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1hd_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hd_collapse_panel_body" class="panel-body"><p>Name of the table in the database (or sheet of an Excel file) to query.</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1he_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1h2_accordion" href="#nsd_1he_collapse_collapse" aria-expanded="false" aria-controls="nsd_1he_collapse_collapse"><b>timeColumnName</b> : EString - <I>Name of the column that contains the time date that is related to the data in the column defined by columnName. </I></a>
+            </h4>
+          </div>
+          <div id="nsd_1he_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1he_collapse_panel_body" class="panel-body"><p>Name of the column that contains the time date that is related to the data in the column defined by columnName. Defaults to &lsquo;time&rsquo;</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace">time</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_1h1_tab_2" class="tab-pane">
+      <div id="nsd_1hf_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hg_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1hf_accordion" href="#nsd_1hg_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hg_collapse_collapse"><b>configuration</b> : AbstractDataConfiguration - <I>LInks a TableBasedProfile to a specific data(base) configuration, such as a relational database or file</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1hg_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hg_collapse_panel_body" class="panel-body"><p>LInks a TableBasedProfile to a specific data(base) configuration, such as a relational database or file</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataConfiguration.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractDataConfiguration</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hh_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1hf_accordion" href="#nsd_1hh_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hh_collapse_collapse"><b>dataSource</b> : AbstractDataSource (GenericProfile)  - <I>Abstract class to describe data sources or references to data sources</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1hh_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hh_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractDataSource</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hi_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1hf_accordion" href="#nsd_1hi_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hi_collapse_collapse"><b>profileQuantityAndUnit</b> : AbstractQuantityAndUnit (GenericProfile)  - <I>Abstract class to describe QuantityAndUnitTypes or references to these</I></a>
+            </h4>
+          </div>
+          <div id="nsd_1hi_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hi_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractQuantityAndUnit.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>AbstractQuantityAndUnit</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Container</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Containment</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">EKeys</th>
+                  <td>
+                    <ol></ol>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Opposite</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Resolve proxies</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_1h1_tab_3" class="tab-pane">
+      <div id="nsd_1hj_accordion" role="tablist" class="panel-group">
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hk_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1hj_accordion" href="#nsd_1hk_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hk_collapse_collapse"><b>getProfile</b> : ProfileElement (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1hk_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hk_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileElement.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ProfileElement</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Exceptions</th>
+                  <td>
+                    <ul></ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+              </table>
+              <h3>Parameters</h3>
+              <h4>from : 
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a> 0..1</h4>
+              <h4>to : 
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDate.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDate</a> 0..1</h4>
+              <h4>aggregationPrecision : 
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Duration.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Duration</a> 0..1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1hl_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1hj_accordion" href="#nsd_1hl_collapse_collapse" aria-expanded="false" aria-controls="nsd_1hl_collapse_collapse"><b>setProfile</b> : EBoolean (GenericProfile) </a>
+            </h4>
+          </div>
+          <div id="nsd_1hl_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1hl_collapse_panel_body" class="panel-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/GenericProfile.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>GenericProfile</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EBoolean.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EBoolean</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Exceptions</th>
+                  <td>
+                    <ul></ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+              </table>
+              <h3>Parameters</h3>
+              <h4>profileElementList : 
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ProfileElement.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>ProfileElement</a> *</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nsd_1h1_tab_4" class="tab-pane">
+      <table class="table table-bordered">
+        <tr class="info">
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ExternalProfile.html">ExternalProfile</a></td>
+          <td>ExternalProfile allows to refer to an externally defined profile. </td>
+        </tr>
+      </table>
+    </div></div>
+</div>
