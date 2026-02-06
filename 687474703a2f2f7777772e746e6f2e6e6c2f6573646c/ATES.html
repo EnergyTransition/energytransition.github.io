@@ -25,7 +25,7 @@
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Aquifer Thermal Energy Storage</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ATES.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
 <area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/HeatStorage.html" title="Generic heat storage asset with min and max temperatures" alt="" coords="38,42,204,131"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ATES.html" title="Aquifer Thermal Energy Storage" alt="" coords="42,192,200,378"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ATES.html" title="Aquifer Thermal Energy Storage" alt="" coords="42,192,200,392"/>
 </map>
 </div>
     <div id="nsd_1_tab_1" class="tab-pane">
@@ -1810,11 +1810,87 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_q_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_q_collapse_collapse" aria-expanded="false" aria-controls="nsd_q_collapse_collapse"><b>minStorageTemperature</b> : EDouble (HeatStorage)  - <I>minimum temperature of the heat that can be stored</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_q_collapse_collapse" aria-expanded="false" aria-controls="nsd_q_collapse_collapse"><b>maximumFlowRate</b> : EDouble - <I>in m3/h</I></a>
             </h4>
           </div>
           <div id="nsd_q_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_q_collapse_panel_body" class="panel-body"><p>minimum temperature of the heat that can be stored</p>
+            <div id="nsd_q_collapse_panel_body" class="panel-body"><p>in m3/h</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EDouble.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EDouble</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Annotation http://www.tno.nl/esdl/attribute/unit</h3>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <td>unit</td>
+      <td style="white-space:pre-wrap;font-family:monospace">m3/h</td>
+    </tr>
+  </table></div></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_r_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_r_collapse_collapse" aria-expanded="false" aria-controls="nsd_r_collapse_collapse"><b>minStorageTemperature</b> : EDouble (HeatStorage)  - <I>minimum temperature of the heat that can be stored</I></a>
+            </h4>
+          </div>
+          <div id="nsd_r_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_r_collapse_panel_body" class="panel-body"><p>minimum temperature of the heat that can be stored</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -1890,85 +1966,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_r_collapse_heading" class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_r_collapse_collapse" aria-expanded="false" aria-controls="nsd_r_collapse_collapse"><b>name</b> : EString (Item)  - <I>Name describing this object</I></a>
-            </h4>
-          </div>
-          <div id="nsd_r_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_r_collapse_panel_body" class="panel-body"><p>Name describing this object</p>
-              <table class="table table-bordered">
-                <tr>
-                  <th style="align:left">Declaring Type</th>
-                  <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Item.html">
-<img src="resources/images/EClass.gif" style="margin-right:5px"/>Item</a></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Type</th>
-                  <td>
-<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
-<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Cardinality</th>
-                  <td>0..1</td>
-                </tr>
-                <tr>
-                  <th style="align:left">Default value</th>
-                  <td>
-                    <div style="white-space:pre;font-family:monospace"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Changeable</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Derived</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">ID</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Ordered</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Transient</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unique</th>
-                  <td>
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <th style="align:left">Unsettable</th>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th style="align:left">Volatile</th>
-                  <td></td>
-                </tr>
-              </table></div>
-          </div>
-        </div>
-        <div class="panel panel-default">
           <div role="tab" id="nsd_s_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_s_collapse_collapse" aria-expanded="false" aria-controls="nsd_s_collapse_collapse"><b>originalIdInSource</b> : EString (Item)  - <I>ID of item in the original data source. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_s_collapse_collapse" aria-expanded="false" aria-controls="nsd_s_collapse_collapse"><b>name</b> : EString (Item)  - <I>Name describing this object</I></a>
             </h4>
           </div>
           <div id="nsd_s_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_s_collapse_panel_body" class="panel-body"><p>ID of item in the original data source. Can be used to make links to the original data</p>
+            <div id="nsd_s_collapse_panel_body" class="panel-body"><p>Name describing this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2036,11 +2040,83 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_t_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_t_collapse_collapse" aria-expanded="false" aria-controls="nsd_t_collapse_collapse"><b>owner</b> : EString (Asset)  - <I>Defines the owner of an asset (free text). </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_t_collapse_collapse" aria-expanded="false" aria-controls="nsd_t_collapse_collapse"><b>originalIdInSource</b> : EString (Item)  - <I>ID of item in the original data source. </I></a>
             </h4>
           </div>
           <div id="nsd_t_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_t_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
+            <div id="nsd_t_collapse_panel_body" class="panel-body"><p>ID of item in the original data source. Can be used to make links to the original data</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Declaring Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Item.html">
+<img src="resources/images/EClass.gif" style="margin-right:5px"/>Item</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/package-summary.html/EString.html">
+<img src="resources/images/EDataType.gif" style="margin-right:5px"/>EString</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_u_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_u_collapse_collapse" aria-expanded="false" aria-controls="nsd_u_collapse_collapse"><b>owner</b> : EString (Asset)  - <I>Defines the owner of an asset (free text). </I></a>
+            </h4>
+          </div>
+          <div id="nsd_u_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_u_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2106,13 +2182,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_u_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_v_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_u_collapse_collapse" aria-expanded="false" aria-controls="nsd_u_collapse_collapse"><b>salinity</b> : EDouble - <I>The dissolved salt content in the groundwater (expressed as NaCl equivalent), in parts per million (ppm)</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_v_collapse_collapse" aria-expanded="false" aria-controls="nsd_v_collapse_collapse"><b>salinity</b> : EDouble - <I>The dissolved salt content in the groundwater (expressed as NaCl equivalent), in parts per million (ppm)</I></a>
             </h4>
           </div>
-          <div id="nsd_u_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_u_collapse_panel_body" class="panel-body"><p>The dissolved salt content in the groundwater (expressed as NaCl equivalent), in parts per million (ppm)</p>
+          <div id="nsd_v_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_v_collapse_panel_body" class="panel-body"><p>The dissolved salt content in the groundwater (expressed as NaCl equivalent), in parts per million (ppm)</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -2182,13 +2258,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_v_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_w_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_v_collapse_collapse" aria-expanded="false" aria-controls="nsd_v_collapse_collapse"><b>selfDischargeRate</b> : EDouble (Storage)  - <I>The self discharge rate with which the storage asset looses energy (in J/s or Watt)</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_w_collapse_collapse" aria-expanded="false" aria-controls="nsd_w_collapse_collapse"><b>selfDischargeRate</b> : EDouble (Storage)  - <I>The self discharge rate with which the storage asset looses energy (in J/s or Watt)</I></a>
             </h4>
           </div>
-          <div id="nsd_v_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_v_collapse_panel_body" class="panel-body"><p>The self discharge rate with which the storage asset looses energy (in J/s or Watt)</p>
+          <div id="nsd_w_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_w_collapse_panel_body" class="panel-body"><p>The self discharge rate with which the storage asset looses energy (in J/s or Watt)</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2264,13 +2340,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_w_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_x_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_w_collapse_collapse" aria-expanded="false" aria-controls="nsd_w_collapse_collapse"><b>shortName</b> : EString (Item)  - <I>Short name for this object, e.g. used in legends of graphs in presentations</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_x_collapse_collapse" aria-expanded="false" aria-controls="nsd_x_collapse_collapse"><b>shortName</b> : EString (Item)  - <I>Short name for this object, e.g. used in legends of graphs in presentations</I></a>
             </h4>
           </div>
-          <div id="nsd_w_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_w_collapse_panel_body" class="panel-body"><p>Short name for this object, e.g. used in legends of graphs in presentations</p>
+          <div id="nsd_x_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_x_collapse_panel_body" class="panel-body"><p>Short name for this object, e.g. used in legends of graphs in presentations</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2336,13 +2412,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_x_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_y_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_x_collapse_collapse" aria-expanded="false" aria-controls="nsd_x_collapse_collapse"><b>state</b> : AssetStateEnum (Asset)  - <I>The AssetStateEnum allows to specify the ‘state’ of an Asset, mainly used for manually simulating different scenarios. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_y_collapse_collapse" aria-expanded="false" aria-controls="nsd_y_collapse_collapse"><b>state</b> : AssetStateEnum (Asset)  - <I>The AssetStateEnum allows to specify the ‘state’ of an Asset, mainly used for manually simulating different scenarios. </I></a>
             </h4>
           </div>
-          <div id="nsd_x_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_x_collapse_panel_body" class="panel-body">
+          <div id="nsd_y_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_y_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2409,13 +2485,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_y_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_z_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_y_collapse_collapse" aria-expanded="false" aria-controls="nsd_y_collapse_collapse"><b>surfaceArea</b> : EInt (Asset)  - <I>The surface that is occupied by this asset in m²</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_z_collapse_collapse" aria-expanded="false" aria-controls="nsd_z_collapse_collapse"><b>surfaceArea</b> : EInt (Asset)  - <I>The surface that is occupied by this asset in m²</I></a>
             </h4>
           </div>
-          <div id="nsd_y_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_y_collapse_panel_body" class="panel-body"><p>The surface that is occupied by this asset in m²</p>
+          <div id="nsd_z_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_z_collapse_panel_body" class="panel-body"><p>The surface that is occupied by this asset in m²</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2491,13 +2567,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_z_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_10_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_z_collapse_collapse" aria-expanded="false" aria-controls="nsd_z_collapse_collapse"><b>technicalLifetime</b> : EDouble (Asset)  - <I>in years</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_10_collapse_collapse" aria-expanded="false" aria-controls="nsd_10_collapse_collapse"><b>technicalLifetime</b> : EDouble (Asset)  - <I>in years</I></a>
             </h4>
           </div>
-          <div id="nsd_z_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_z_collapse_panel_body" class="panel-body"><p>in years</p>
+          <div id="nsd_10_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_10_collapse_panel_body" class="panel-body"><p>in years</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2573,13 +2649,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_10_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_11_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_10_collapse_collapse" aria-expanded="false" aria-controls="nsd_10_collapse_collapse"><b>volume</b> : EDouble (HeatStorage)  - <I>volume (im m³) of the heat storage</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_11_collapse_collapse" aria-expanded="false" aria-controls="nsd_11_collapse_collapse"><b>volume</b> : EDouble (HeatStorage)  - <I>volume (im m³) of the heat storage</I></a>
             </h4>
           </div>
-          <div id="nsd_10_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_10_collapse_panel_body" class="panel-body"><p>volume (im m³) of the heat storage</p>
+          <div id="nsd_11_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_11_collapse_panel_body" class="panel-body"><p>volume (im m³) of the heat storage</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2655,13 +2731,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_11_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_12_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_11_collapse_collapse" aria-expanded="false" aria-controls="nsd_11_collapse_collapse"><b>wellCasingSize</b> : EDouble - <I>Diameter of the well casing in inches</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_12_collapse_collapse" aria-expanded="false" aria-controls="nsd_12_collapse_collapse"><b>wellCasingSize</b> : EDouble - <I>Diameter of the well casing in inches</I></a>
             </h4>
           </div>
-          <div id="nsd_11_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_11_collapse_panel_body" class="panel-body"><p>Diameter of the well casing in inches</p>
+          <div id="nsd_12_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_12_collapse_panel_body" class="panel-body"><p>Diameter of the well casing in inches</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -2731,13 +2807,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_12_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_13_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_12_collapse_collapse" aria-expanded="false" aria-controls="nsd_12_collapse_collapse"><b>wellDistance</b> : EDouble - <I>The distance between the hot and the cold well at aquifer level in meters</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_2_accordion" href="#nsd_13_collapse_collapse" aria-expanded="false" aria-controls="nsd_13_collapse_collapse"><b>wellDistance</b> : EDouble - <I>The distance between the hot and the cold well at aquifer level in meters</I></a>
             </h4>
           </div>
-          <div id="nsd_12_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_12_collapse_panel_body" class="panel-body"><p>The distance between the hot and the cold well at aquifer level in meters</p>
+          <div id="nsd_13_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_13_collapse_panel_body" class="panel-body"><p>The distance between the hot and the cold well at aquifer level in meters</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -2809,15 +2885,15 @@
       </div>
     </div>
     <div id="nsd_1_tab_2" class="tab-pane">
-      <div id="nsd_13_accordion" role="tablist" class="panel-group">
+      <div id="nsd_14_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_14_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_15_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_14_collapse_collapse" aria-expanded="false" aria-controls="nsd_14_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_15_collapse_collapse" aria-expanded="false" aria-controls="nsd_15_collapse_collapse"><b>KPIs</b> : KPIs (Asset)  - <I>Collection of key performance indicators of areas or assets</I></a>
             </h4>
           </div>
-          <div id="nsd_14_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_14_collapse_panel_body" class="panel-body">
+          <div id="nsd_15_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_15_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2906,13 +2982,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_15_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_16_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_15_collapse_collapse" aria-expanded="false" aria-controls="nsd_15_collapse_collapse"><b>area</b> : Area (Asset)  - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_16_collapse_collapse" aria-expanded="false" aria-controls="nsd_16_collapse_collapse"><b>area</b> : Area (Asset)  - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
             </h4>
           </div>
-          <div id="nsd_15_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_15_collapse_panel_body" class="panel-body">
+          <div id="nsd_16_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_16_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3002,13 +3078,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_16_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_17_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_16_collapse_collapse" aria-expanded="false" aria-controls="nsd_16_collapse_collapse"><b>behaviour</b> : AbstractBehaviour (EnergyAsset)  - <I>parameter that allows to specify the (dynamic) behaviour of this asset</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_17_collapse_collapse" aria-expanded="false" aria-controls="nsd_17_collapse_collapse"><b>behaviour</b> : AbstractBehaviour (EnergyAsset)  - <I>parameter that allows to specify the (dynamic) behaviour of this asset</I></a>
             </h4>
           </div>
-          <div id="nsd_16_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_16_collapse_panel_body" class="panel-body"><p>parameter that allows to specify the (dynamic) behaviour of this asset</p>
+          <div id="nsd_17_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_17_collapse_panel_body" class="panel-body"><p>parameter that allows to specify the (dynamic) behaviour of this asset</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3096,13 +3172,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_17_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_18_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_17_collapse_collapse" aria-expanded="false" aria-controls="nsd_17_collapse_collapse"><b>bufferDistance</b> : BufferDistance (Asset)  - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_18_collapse_collapse" aria-expanded="false" aria-controls="nsd_18_collapse_collapse"><b>bufferDistance</b> : BufferDistance (Asset)  - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
             </h4>
           </div>
-          <div id="nsd_17_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_17_collapse_panel_body" class="panel-body">
+          <div id="nsd_18_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_18_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3190,13 +3266,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_18_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_19_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_18_collapse_collapse" aria-expanded="false" aria-controls="nsd_18_collapse_collapse"><b>constraint</b> : Constraint (Asset)  - <I>Allows to specify constraints for asset attributes.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_19_collapse_collapse" aria-expanded="false" aria-controls="nsd_19_collapse_collapse"><b>constraint</b> : Constraint (Asset)  - <I>Allows to specify constraints for asset attributes.</I></a>
             </h4>
           </div>
-          <div id="nsd_18_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_18_collapse_panel_body" class="panel-body">
+          <div id="nsd_19_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_19_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3285,13 +3361,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_19_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1a_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_19_collapse_collapse" aria-expanded="false" aria-controls="nsd_19_collapse_collapse"><b>containingAsset</b> : CompoundAsset (Asset)  - <I>Asset that can contain multiple other assets that belong together. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1a_collapse_collapse" aria-expanded="false" aria-controls="nsd_1a_collapse_collapse"><b>containingAsset</b> : CompoundAsset (Asset)  - <I>Asset that can contain multiple other assets that belong together. </I></a>
             </h4>
           </div>
-          <div id="nsd_19_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_19_collapse_panel_body" class="panel-body">
+          <div id="nsd_1a_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1a_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3381,13 +3457,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1a_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1b_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1a_collapse_collapse" aria-expanded="false" aria-controls="nsd_1a_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding (Asset)  - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1b_collapse_collapse" aria-expanded="false" aria-controls="nsd_1b_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding (Asset)  - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
             </h4>
           </div>
-          <div id="nsd_1a_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1a_collapse_panel_body" class="panel-body">
+          <div id="nsd_1b_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1b_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3477,13 +3553,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1b_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1c_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1b_collapse_collapse" aria-expanded="false" aria-controls="nsd_1b_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset)  - <I>Defines a control strategy for a specific asset</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1c_collapse_collapse" aria-expanded="false" aria-controls="nsd_1c_collapse_collapse"><b>controlStrategy</b> : ControlStrategy (EnergyAsset)  - <I>Defines a control strategy for a specific asset</I></a>
             </h4>
           </div>
-          <div id="nsd_1b_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1b_collapse_panel_body" class="panel-body">
+          <div id="nsd_1c_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1c_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3571,13 +3647,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1c_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1d_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1c_collapse_collapse" aria-expanded="false" aria-controls="nsd_1c_collapse_collapse"><b>costInformation</b> : CostInformation (Asset)  - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1d_collapse_collapse" aria-expanded="false" aria-controls="nsd_1d_collapse_collapse"><b>costInformation</b> : CostInformation (Asset)  - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
             </h4>
           </div>
-          <div id="nsd_1c_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1c_collapse_panel_body" class="panel-body">
+          <div id="nsd_1d_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1d_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3666,13 +3742,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1d_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1e_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1d_collapse_collapse" aria-expanded="false" aria-controls="nsd_1d_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1e_collapse_collapse" aria-expanded="false" aria-controls="nsd_1e_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
             </h4>
           </div>
-          <div id="nsd_1d_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1d_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
+          <div id="nsd_1e_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1e_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3760,13 +3836,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1e_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1f_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1e_collapse_collapse" aria-expanded="false" aria-controls="nsd_1e_collapse_collapse"><b>geometry</b> : Geometry (Asset)  - <I>Describes the physical geometry of this asset. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1f_collapse_collapse" aria-expanded="false" aria-controls="nsd_1f_collapse_collapse"><b>geometry</b> : Geometry (Asset)  - <I>Describes the physical geometry of this asset. </I></a>
             </h4>
           </div>
-          <div id="nsd_1e_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1e_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
+          <div id="nsd_1f_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1f_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3854,13 +3930,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1f_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1g_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1f_collapse_collapse" aria-expanded="false" aria-controls="nsd_1f_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1g_collapse_collapse" aria-expanded="false" aria-controls="nsd_1g_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
             </h4>
           </div>
-          <div id="nsd_1f_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1f_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
+          <div id="nsd_1g_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1g_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -3947,13 +4023,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1g_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1h_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1g_collapse_collapse" aria-expanded="false" aria-controls="nsd_1g_collapse_collapse"><b>material</b> : AbstractMatter (Asset)  - <I>Allows for describing of what material(s) the Asset is made</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1h_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h_collapse_collapse"><b>material</b> : AbstractMatter (Asset)  - <I>Allows for describing of what material(s) the Asset is made</I></a>
             </h4>
           </div>
-          <div id="nsd_1g_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1g_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
+          <div id="nsd_1h_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1h_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -4041,13 +4117,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1h_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1i_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1h_collapse_collapse" aria-expanded="false" aria-controls="nsd_1h_collapse_collapse"><b>port</b> : Port (EnergyAsset)  - <I>Ports allow connections between EnergyAssets. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1i_collapse_collapse" aria-expanded="false" aria-controls="nsd_1i_collapse_collapse"><b>port</b> : Port (EnergyAsset)  - <I>Ports allow connections between EnergyAssets. </I></a>
             </h4>
           </div>
-          <div id="nsd_1h_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1h_collapse_panel_body" class="panel-body">
+          <div id="nsd_1i_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1i_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -4137,13 +4213,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1i_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1j_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1i_collapse_collapse" aria-expanded="false" aria-controls="nsd_1i_collapse_collapse"><b>profile</b> : GenericProfile (Storage)  - <I>state of charge profile</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1j_collapse_collapse" aria-expanded="false" aria-controls="nsd_1j_collapse_collapse"><b>profile</b> : GenericProfile (Storage)  - <I>state of charge profile</I></a>
             </h4>
           </div>
-          <div id="nsd_1i_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1i_collapse_panel_body" class="panel-body"><p>state of charge profile</p>
+          <div id="nsd_1j_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1j_collapse_panel_body" class="panel-body"><p>state of charge profile</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -4231,13 +4307,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_1j_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_1k_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_13_accordion" href="#nsd_1j_collapse_collapse" aria-expanded="false" aria-controls="nsd_1j_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_14_accordion" href="#nsd_1k_collapse_collapse" aria-expanded="false" aria-controls="nsd_1k_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
             </h4>
           </div>
-          <div id="nsd_1j_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1j_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
+          <div id="nsd_1k_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1k_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
