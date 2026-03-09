@@ -24,7 +24,7 @@
 <area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractDataSource.html" title="Abstract class to describe data sources or references to data sources" alt="" coords="214,42,356,103"/>
 <area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSourceList.html" title="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSourceList.html" alt="" coords="397,172,514,247"/>
 <area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSources.html" title="Collection of datasources used in the energy system" alt="" coords="32,165,136,254"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSource.html" title="A DataSource describes the source of the piece of information used in the energy system. " alt="" coords="154,333,265,505"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSource.html" title="A DataSource describes the source of the piece of information used in the energy system. " alt="" coords="138,333,281,519"/>
 </map>
 </div>
     <div id="nsd_1g7_tab_1" class="tab-pane">
@@ -507,11 +507,11 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1gg_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1g8_accordion" href="#nsd_1gg_collapse_collapse" aria-expanded="false" aria-controls="nsd_1gg_collapse_collapse"><b>reference</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_1g8_accordion" href="#nsd_1gg_collapse_collapse" aria-expanded="false" aria-controls="nsd_1gg_collapse_collapse"><b>reference</b> : EString - <I>Reference to a datasource (document, dataset or model)</I></a>
             </h4>
           </div>
           <div id="nsd_1gg_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1gg_collapse_panel_body" class="panel-body">
+            <div id="nsd_1gg_collapse_panel_body" class="panel-body"><p>Reference to a datasource (document, dataset or model)</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -567,8 +567,7 @@
                   <th style="align:left">Volatile</th>
                   <td></td>
                 </tr>
-              </table>
-            </div>
+              </table></div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -641,11 +640,77 @@
         <div class="panel panel-default">
           <div role="tab" id="nsd_1gi_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_1g8_accordion" href="#nsd_1gi_collapse_collapse" aria-expanded="false" aria-controls="nsd_1gi_collapse_collapse"><b>version</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_1g8_accordion" href="#nsd_1gi_collapse_collapse" aria-expanded="false" aria-controls="nsd_1gi_collapse_collapse"><b>type</b> : DataSourceTypeEnum - <I>The type of the data source, DOCUMENT for documents, reports, papers, DATASET for datasets in Excel, CSV, or any other format, and MODEL to indicate the source of this data is a specific model</I></a>
             </h4>
           </div>
           <div id="nsd_1gi_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_1gi_collapse_panel_body" class="panel-body">
+            <div id="nsd_1gi_collapse_panel_body" class="panel-body"><p>The type of the data source, DOCUMENT for documents, reports, papers, DATASET for datasets in Excel, CSV, or any other format, and MODEL to indicate the source of this data is a specific model</p>
+              <table class="table table-bordered">
+                <tr>
+                  <th style="align:left">Type</th>
+                  <td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/DataSourceTypeEnum.html">
+<img src="resources/images/EEnum.gif" style="margin-right:5px"/>DataSourceTypeEnum</a></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Cardinality</th>
+                  <td>0..1</td>
+                </tr>
+                <tr>
+                  <th style="align:left">Default value</th>
+                  <td>
+                    <div style="white-space:pre;font-family:monospace"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Changeable</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Derived</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">ID</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Ordered</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Transient</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unique</th>
+                  <td>
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="align:left">Unsettable</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th style="align:left">Volatile</th>
+                  <td></td>
+                </tr>
+              </table></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div role="tab" id="nsd_1gj_collapse_heading" class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#nsd_1g8_accordion" href="#nsd_1gj_collapse_collapse" aria-expanded="false" aria-controls="nsd_1gj_collapse_collapse"><b>version</b> : EString</a>
+            </h4>
+          </div>
+          <div id="nsd_1gj_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_1gj_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
