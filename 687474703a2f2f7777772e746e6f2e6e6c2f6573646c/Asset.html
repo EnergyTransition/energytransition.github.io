@@ -6,58 +6,58 @@
 <div>
   <ul class="nav nav-tabs">
     <li class="active">
-      <a href="#nsd_ou_tab_0" data-toggle="tab">Documentation</a>
+      <a href="#nsd_pu_tab_0" data-toggle="tab">Documentation</a>
     </li>
     <li>
-      <a href="#nsd_ou_tab_1" data-toggle="tab">
+      <a href="#nsd_pu_tab_1" data-toggle="tab">
 <img src="resources/images/EAttribute.gif" style="margin-right:5px"/> Attributes</a>
     </li>
     <li>
-      <a href="#nsd_ou_tab_2" data-toggle="tab">
+      <a href="#nsd_pu_tab_2" data-toggle="tab">
 <img src="resources/images/EReference.gif" style="margin-right:5px"/> References</a>
     </li>
     <li>
-      <a href="#nsd_ou_tab_3" data-toggle="tab">Supertypes</a>
+      <a href="#nsd_pu_tab_3" data-toggle="tab">Supertypes</a>
     </li>
     <li>
-      <a href="#nsd_ou_tab_4" data-toggle="tab">Subtypes</a>
+      <a href="#nsd_pu_tab_4" data-toggle="tab">Subtypes</a>
     </li>
   </ul>
   <div class="tab-content">
-    <div id="nsd_ou_tab_0" class="tab-pane active">
+    <div id="nsd_pu_tab_0" class="tab-pane active">
       <div style="margin-top:10px;margin-bottom:10px" class="markdown-body"><p>Assets are all physical thing in the EnergySystem. Assets can have a location, a geometry, commissioning and decommissioning dates, cost information (investment, installation and operation and maintenance costs).</p></div>
       <img src="687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.png" usemap="#plantuml_map"/><map id="plantuml_map" name="plantuml_map">
-<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Measures.html" title="Collection of measures that can be applied to an energy system" alt="" coords="132,570,219,618"/>
-<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyMarket.html" title="Defines an EnergyMarket of the energy system. " alt="" coords="1014,90,1120,138"/>
-<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractMatter.html" title="Abstract class for describing Matters, can be instantiated as a subclass of Matter or as a MatterReference." alt="" coords="1330,570,1440,618"/>
-<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Geometry.html" title="Abstract class to define the shape/location of an asset or area. " alt="" coords="423,563,509,625"/>
-<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AssetTemplate.html" title="Template for an asset. " alt="" coords="652,724,767,772"/>
-<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBuilding.html" title="Describes the shared properties of building, building unit and aggregated building" alt="" coords="696,90,818,138"/>
-<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/TemplatedAsset.html" title="An instantiated asset that is referring to an asset template and the specific asset. " alt="" coords="1475,570,1597,618"/>
-<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CompoundAsset.html" title="Asset that can contain multiple other assets that belong together. " alt="" coords="853,90,978,138"/>
-<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ConnectableAsset.html" title="Abstract class to group sub classes that have exposed ports or ports of its own" alt="" coords="1632,570,1765,618"/>
-<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/KPIs.html" title="Collection of key performance indicators of areas or assets" alt="" coords="544,556,640,632"/>
-<area shape="rect" id="id11" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Insulation.html" title="Describes insulation that can be added to a building. " alt="" coords="973,563,1100,625"/>
-<area shape="rect" id="id12" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Measure.html" title="A single measure or a combination of measures with collective cost information that can be applied to an energy system. " alt="" coords="1679,83,1807,145"/>
-<area shape="rect" id="id13" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Constraint.html" title="Allows to specify constraints for asset attributes." alt="" coords="254,563,387,625"/>
-<area shape="rect" id="id14" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Glazing.html" title="Allows to specify the glass of a building, e.g. for calculating heat loss" alt="" coords="779,556,938,632"/>
-<area shape="rect" id="id15" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BufferDistance.html" title="Buffer distance around an asset that relates to risks, environment, noise, CO2, …" alt="" coords="1135,556,1294,632"/>
-<area shape="rect" id="id16" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html" title="Describes the costs to acquire, install and maintain a certain asset." alt="" coords="1801,543,1921,646"/>
-<area shape="rect" id="id17" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Item.html" title="Class describing an abstract thing in an energy system. " alt="" coords="130,56,258,173"/>
-<area shape="rect" id="id18" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Area.html" title="The Area class represents a physical geographic area or a more abstract logical area. " alt="" coords="406,42,545,186"/>
-<area shape="rect" id="id19" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html" title="Assets are all physical thing in the EnergySystem. " alt="" coords="845,265,986,465"/>
+<area shape="rect" id="id1" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Measures.html" title="Collection of measures that can be applied to an energy system" alt="" coords="962,752,1049,800"/>
+<area shape="rect" id="id2" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/EnergyMarket.html" title="Defines an EnergyMarket of the energy system. " alt="" coords="1033,76,1139,124"/>
+<area shape="rect" id="id3" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractMatter.html" title="Abstract class for describing Matters, can be instantiated as a subclass of Matter or as a MatterReference." alt="" coords="1518,563,1628,611"/>
+<area shape="rect" id="id4" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Geometry.html" title="Abstract class to define the shape/location of an asset or area. " alt="" coords="1314,745,1400,806"/>
+<area shape="rect" id="id5" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AssetTemplate.html" title="Template for an asset. " alt="" coords="492,752,607,800"/>
+<area shape="rect" id="id6" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/AbstractBuilding.html" title="Describes the shared properties of building, building unit and aggregated building" alt="" coords="1174,76,1296,124"/>
+<area shape="rect" id="id7" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/TemplatedAsset.html" title="An instantiated asset that is referring to an asset template and the specific asset. " alt="" coords="618,563,740,611"/>
+<area shape="rect" id="id8" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CompoundAsset.html" title="Asset that can contain multiple other assets that belong together. " alt="" coords="1858,563,1983,611"/>
+<area shape="rect" id="id9" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ConnectableAsset.html" title="Abstract class to group sub classes that have exposed ports or ports of its own" alt="" coords="178,563,311,611"/>
+<area shape="rect" id="id10" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/KPIs.html" title="Collection of key performance indicators of areas or assets" alt="" coords="1148,738,1244,813"/>
+<area shape="rect" id="id11" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Insulation.html" title="Describes insulation that can be added to a building. " alt="" coords="2018,556,2145,618"/>
+<area shape="rect" id="id12" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Measure.html" title="A single measure or a combination of measures with collective cost information that can be applied to an energy system. " alt="" coords="1782,69,1910,131"/>
+<area shape="rect" id="id13" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Constraint.html" title="Allows to specify constraints for asset attributes." alt="" coords="346,556,479,618"/>
+<area shape="rect" id="id14" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Glazing.html" title="Allows to specify the glass of a building, e.g. for calculating heat loss" alt="" coords="776,549,935,625"/>
+<area shape="rect" id="id15" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/BufferDistance.html" title="Buffer distance around an asset that relates to risks, environment, noise, CO2, …" alt="" coords="1664,549,1823,625"/>
+<area shape="rect" id="id16" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/CostInformation.html" title="Describes the costs to acquire, install and maintain a certain asset." alt="" coords="2180,536,2300,639"/>
+<area shape="rect" id="id17" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Item.html" title="Class describing an abstract thing in an energy system. " alt="" coords="225,42,353,159"/>
+<area shape="rect" id="id18" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Area.html" title="The Area class represents a physical geographic area or a more abstract logical area. " alt="" coords="1200,515,1339,659"/>
+<area shape="rect" id="id19" href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Asset.html" title="Assets are all physical thing in the EnergySystem. " alt="" coords="1064,237,1205,437"/>
 </map>
 </div>
-    <div id="nsd_ou_tab_1" class="tab-pane">
-      <div id="nsd_ov_accordion" role="tablist" class="panel-group">
+    <div id="nsd_pu_tab_1" class="tab-pane">
+      <div id="nsd_pv_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_ow_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_pw_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_ow_collapse_collapse" aria-expanded="false" aria-controls="nsd_ow_collapse_collapse"><b>aggregated</b> : EBoolean - <I>Defines if this Asset is aggregated of other assets of the same type</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_pw_collapse_collapse" aria-expanded="false" aria-controls="nsd_pw_collapse_collapse"><b>aggregated</b> : EBoolean - <I>Defines if this Asset is aggregated of other assets of the same type</I></a>
             </h4>
           </div>
-          <div id="nsd_ow_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_ow_collapse_panel_body" class="panel-body"><p>Defines if this Asset is aggregated of other assets of the same type</p>
+          <div id="nsd_pw_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_pw_collapse_panel_body" class="panel-body"><p>Defines if this Asset is aggregated of other assets of the same type</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -117,13 +117,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_ox_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_px_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_ox_collapse_collapse" aria-expanded="false" aria-controls="nsd_ox_collapse_collapse"><b>aggregationCount</b> : EInt - <I>Number of assets that are aggregated</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_px_collapse_collapse" aria-expanded="false" aria-controls="nsd_px_collapse_collapse"><b>aggregationCount</b> : EInt - <I>Number of assets that are aggregated</I></a>
             </h4>
           </div>
-          <div id="nsd_ox_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_ox_collapse_panel_body" class="panel-body"><p>Number of assets that are aggregated</p>
+          <div id="nsd_px_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_px_collapse_panel_body" class="panel-body"><p>Number of assets that are aggregated</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -193,13 +193,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_oy_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_py_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_oy_collapse_collapse" aria-expanded="false" aria-controls="nsd_oy_collapse_collapse"><b>assetType</b> : EString - <I>the type (e.g. model number) of the asset</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_py_collapse_collapse" aria-expanded="false" aria-controls="nsd_py_collapse_collapse"><b>assetType</b> : EString - <I>the type (e.g. model number) of the asset</I></a>
             </h4>
           </div>
-          <div id="nsd_oy_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_oy_collapse_panel_body" class="panel-body"><p>the type (e.g. model number) of the asset</p>
+          <div id="nsd_py_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_py_collapse_panel_body" class="panel-body"><p>the type (e.g. model number) of the asset</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -259,13 +259,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_oz_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_pz_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_oz_collapse_collapse" aria-expanded="false" aria-controls="nsd_oz_collapse_collapse"><b>commissioningDate</b> : EDate - <I>If this date is in the future it is a planned asset in this energy system</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_pz_collapse_collapse" aria-expanded="false" aria-controls="nsd_pz_collapse_collapse"><b>commissioningDate</b> : EDate - <I>If this date is in the future it is a planned asset in this energy system</I></a>
             </h4>
           </div>
-          <div id="nsd_oz_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_oz_collapse_panel_body" class="panel-body"><p>If this date is in the future it is a planned asset in this energy system</p>
+          <div id="nsd_pz_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_pz_collapse_panel_body" class="panel-body"><p>If this date is in the future it is a planned asset in this energy system</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -325,13 +325,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p0_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q0_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p0_collapse_collapse" aria-expanded="false" aria-controls="nsd_p0_collapse_collapse"><b>decommissioningDate</b> : EDate - <I>If this date is in the past, it is an asset that has been decommissioned</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q0_collapse_collapse" aria-expanded="false" aria-controls="nsd_q0_collapse_collapse"><b>decommissioningDate</b> : EDate - <I>If this date is in the past, it is an asset that has been decommissioned</I></a>
             </h4>
           </div>
-          <div id="nsd_p0_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p0_collapse_panel_body" class="panel-body"><p>If this date is in the past, it is an asset that has been decommissioned</p>
+          <div id="nsd_q0_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q0_collapse_panel_body" class="panel-body"><p>If this date is in the past, it is an asset that has been decommissioned</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -391,13 +391,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p1_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q1_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p1_collapse_collapse" aria-expanded="false" aria-controls="nsd_p1_collapse_collapse"><b>description</b> : EString (Item)  - <I>Human readable description of this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q1_collapse_collapse" aria-expanded="false" aria-controls="nsd_q1_collapse_collapse"><b>description</b> : EString (Item)  - <I>Human readable description of this object</I></a>
             </h4>
           </div>
-          <div id="nsd_p1_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p1_collapse_panel_body" class="panel-body"><p>Human readable description of this object</p>
+          <div id="nsd_q1_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q1_collapse_panel_body" class="panel-body"><p>Human readable description of this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -463,13 +463,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p2_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q2_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p2_collapse_collapse" aria-expanded="false" aria-controls="nsd_p2_collapse_collapse"><b>id</b> : EString (Item)  - <I>Unique identifier for this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q2_collapse_collapse" aria-expanded="false" aria-controls="nsd_q2_collapse_collapse"><b>id</b> : EString (Item)  - <I>Unique identifier for this object</I></a>
             </h4>
           </div>
-          <div id="nsd_p2_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p2_collapse_panel_body" class="panel-body"><p>Unique identifier for this object</p>
+          <div id="nsd_q2_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q2_collapse_panel_body" class="panel-body"><p>Unique identifier for this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -537,13 +537,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p3_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q3_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p3_collapse_collapse" aria-expanded="false" aria-controls="nsd_p3_collapse_collapse"><b>installationDuration</b> : EDouble - <I>the time required to install the asset (e.g. for calculating the effects on employment or the time it takes to construct and install the asset) in days</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q3_collapse_collapse" aria-expanded="false" aria-controls="nsd_q3_collapse_collapse"><b>installationDuration</b> : EDouble - <I>the time required to install the asset (e.g. for calculating the effects on employment or the time it takes to construct and install the asset) in days</I></a>
             </h4>
           </div>
-          <div id="nsd_p3_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p3_collapse_panel_body" class="panel-body"><p>the time required to install the asset (e.g. for calculating the effects on employment or the time it takes to construct and install the asset) in days</p>
+          <div id="nsd_q3_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q3_collapse_panel_body" class="panel-body"><p>the time required to install the asset (e.g. for calculating the effects on employment or the time it takes to construct and install the asset) in days</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -613,13 +613,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p4_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q4_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p4_collapse_collapse" aria-expanded="false" aria-controls="nsd_p4_collapse_collapse"><b>manufacturer</b> : EString</a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q4_collapse_collapse" aria-expanded="false" aria-controls="nsd_q4_collapse_collapse"><b>manufacturer</b> : EString</a>
             </h4>
           </div>
-          <div id="nsd_p4_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p4_collapse_panel_body" class="panel-body">
+          <div id="nsd_q4_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q4_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -680,13 +680,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p5_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q5_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p5_collapse_collapse" aria-expanded="false" aria-controls="nsd_p5_collapse_collapse"><b>name</b> : EString (Item)  - <I>Name describing this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q5_collapse_collapse" aria-expanded="false" aria-controls="nsd_q5_collapse_collapse"><b>name</b> : EString (Item)  - <I>Name describing this object</I></a>
             </h4>
           </div>
-          <div id="nsd_p5_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p5_collapse_panel_body" class="panel-body"><p>Name describing this object</p>
+          <div id="nsd_q5_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q5_collapse_panel_body" class="panel-body"><p>Name describing this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -752,13 +752,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p6_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q6_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p6_collapse_collapse" aria-expanded="false" aria-controls="nsd_p6_collapse_collapse"><b>originalIdInSource</b> : EString (Item)  - <I>ID of item in the original data source. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q6_collapse_collapse" aria-expanded="false" aria-controls="nsd_q6_collapse_collapse"><b>originalIdInSource</b> : EString (Item)  - <I>ID of item in the original data source. </I></a>
             </h4>
           </div>
-          <div id="nsd_p6_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p6_collapse_panel_body" class="panel-body"><p>ID of item in the original data source. Can be used to make links to the original data</p>
+          <div id="nsd_q6_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q6_collapse_panel_body" class="panel-body"><p>ID of item in the original data source. Can be used to make links to the original data</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -824,13 +824,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p7_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q7_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p7_collapse_collapse" aria-expanded="false" aria-controls="nsd_p7_collapse_collapse"><b>owner</b> : EString - <I>Defines the owner of an asset (free text). </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q7_collapse_collapse" aria-expanded="false" aria-controls="nsd_q7_collapse_collapse"><b>owner</b> : EString - <I>Defines the owner of an asset (free text). </I></a>
             </h4>
           </div>
-          <div id="nsd_p7_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p7_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
+          <div id="nsd_q7_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q7_collapse_panel_body" class="panel-body"><p>Defines the owner of an asset (free text). Use the isOwnedBy relationship to refer to a Party</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -890,13 +890,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p8_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q8_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p8_collapse_collapse" aria-expanded="false" aria-controls="nsd_p8_collapse_collapse"><b>shortName</b> : EString (Item)  - <I>Short name for this object, e.g. used in legends of graphs in presentations</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q8_collapse_collapse" aria-expanded="false" aria-controls="nsd_q8_collapse_collapse"><b>shortName</b> : EString (Item)  - <I>Short name for this object, e.g. used in legends of graphs in presentations</I></a>
             </h4>
           </div>
-          <div id="nsd_p8_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p8_collapse_panel_body" class="panel-body"><p>Short name for this object, e.g. used in legends of graphs in presentations</p>
+          <div id="nsd_q8_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q8_collapse_panel_body" class="panel-body"><p>Short name for this object, e.g. used in legends of graphs in presentations</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -962,13 +962,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_p9_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_q9_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_p9_collapse_collapse" aria-expanded="false" aria-controls="nsd_p9_collapse_collapse"><b>state</b> : AssetStateEnum - <I>The AssetStateEnum allows to specify the ‘state’ of an Asset, mainly used for manually simulating different scenarios. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_q9_collapse_collapse" aria-expanded="false" aria-controls="nsd_q9_collapse_collapse"><b>state</b> : AssetStateEnum - <I>The AssetStateEnum allows to specify the ‘state’ of an Asset, mainly used for manually simulating different scenarios. </I></a>
             </h4>
           </div>
-          <div id="nsd_p9_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_p9_collapse_panel_body" class="panel-body">
+          <div id="nsd_q9_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_q9_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1029,13 +1029,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pa_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qa_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_pa_collapse_collapse" aria-expanded="false" aria-controls="nsd_pa_collapse_collapse"><b>surfaceArea</b> : EInt - <I>The surface that is occupied by this asset in m²</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_qa_collapse_collapse" aria-expanded="false" aria-controls="nsd_qa_collapse_collapse"><b>surfaceArea</b> : EInt - <I>The surface that is occupied by this asset in m²</I></a>
             </h4>
           </div>
-          <div id="nsd_pa_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pa_collapse_panel_body" class="panel-body"><p>The surface that is occupied by this asset in m²</p>
+          <div id="nsd_qa_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qa_collapse_panel_body" class="panel-body"><p>The surface that is occupied by this asset in m²</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1105,13 +1105,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pb_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qb_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_ov_accordion" href="#nsd_pb_collapse_collapse" aria-expanded="false" aria-controls="nsd_pb_collapse_collapse"><b>technicalLifetime</b> : EDouble - <I>in years</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_pv_accordion" href="#nsd_qb_collapse_collapse" aria-expanded="false" aria-controls="nsd_qb_collapse_collapse"><b>technicalLifetime</b> : EDouble - <I>in years</I></a>
             </h4>
           </div>
-          <div id="nsd_pb_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pb_collapse_panel_body" class="panel-body"><p>in years</p>
+          <div id="nsd_qb_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qb_collapse_panel_body" class="panel-body"><p>in years</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1182,16 +1182,16 @@
         </div>
       </div>
     </div>
-    <div id="nsd_ou_tab_2" class="tab-pane">
-      <div id="nsd_pc_accordion" role="tablist" class="panel-group">
+    <div id="nsd_pu_tab_2" class="tab-pane">
+      <div id="nsd_qc_accordion" role="tablist" class="panel-group">
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pd_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qd_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pd_collapse_collapse" aria-expanded="false" aria-controls="nsd_pd_collapse_collapse"><b>KPIs</b> : KPIs - <I>Collection of key performance indicators of areas or assets</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qd_collapse_collapse" aria-expanded="false" aria-controls="nsd_qd_collapse_collapse"><b>KPIs</b> : KPIs - <I>Collection of key performance indicators of areas or assets</I></a>
             </h4>
           </div>
-          <div id="nsd_pd_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pd_collapse_panel_body" class="panel-body">
+          <div id="nsd_qd_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qd_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1274,13 +1274,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pe_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qe_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pe_collapse_collapse" aria-expanded="false" aria-controls="nsd_pe_collapse_collapse"><b>area</b> : Area - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qe_collapse_collapse" aria-expanded="false" aria-controls="nsd_qe_collapse_collapse"><b>area</b> : Area - <I>The Area class represents a physical geographic area or a more abstract logical area. </I></a>
             </h4>
           </div>
-          <div id="nsd_pe_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pe_collapse_panel_body" class="panel-body">
+          <div id="nsd_qe_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qe_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1364,13 +1364,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pf_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qf_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pf_collapse_collapse" aria-expanded="false" aria-controls="nsd_pf_collapse_collapse"><b>bufferDistance</b> : BufferDistance - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qf_collapse_collapse" aria-expanded="false" aria-controls="nsd_qf_collapse_collapse"><b>bufferDistance</b> : BufferDistance - <I>Buffer distance around an asset that relates to risks, environment, noise, CO2, …</I></a>
             </h4>
           </div>
-          <div id="nsd_pf_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pf_collapse_panel_body" class="panel-body">
+          <div id="nsd_qf_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qf_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1452,13 +1452,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pg_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qg_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pg_collapse_collapse" aria-expanded="false" aria-controls="nsd_pg_collapse_collapse"><b>constraint</b> : Constraint - <I>Allows to specify constraints for asset attributes.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qg_collapse_collapse" aria-expanded="false" aria-controls="nsd_qg_collapse_collapse"><b>constraint</b> : Constraint - <I>Allows to specify constraints for asset attributes.</I></a>
             </h4>
           </div>
-          <div id="nsd_pg_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pg_collapse_panel_body" class="panel-body">
+          <div id="nsd_qg_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qg_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1541,13 +1541,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_ph_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qh_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_ph_collapse_collapse" aria-expanded="false" aria-controls="nsd_ph_collapse_collapse"><b>containingAsset</b> : CompoundAsset - <I>Asset that can contain multiple other assets that belong together. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qh_collapse_collapse" aria-expanded="false" aria-controls="nsd_qh_collapse_collapse"><b>containingAsset</b> : CompoundAsset - <I>Asset that can contain multiple other assets that belong together. </I></a>
             </h4>
           </div>
-          <div id="nsd_ph_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_ph_collapse_panel_body" class="panel-body">
+          <div id="nsd_qh_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qh_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1631,13 +1631,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pi_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qi_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pi_collapse_collapse" aria-expanded="false" aria-controls="nsd_pi_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qi_collapse_collapse" aria-expanded="false" aria-controls="nsd_qi_collapse_collapse"><b>containingBuilding</b> : AbstractBuilding - <I>Describes the shared properties of building, building unit and aggregated building</I></a>
             </h4>
           </div>
-          <div id="nsd_pi_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pi_collapse_panel_body" class="panel-body">
+          <div id="nsd_qi_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qi_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1721,13 +1721,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pj_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qj_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pj_collapse_collapse" aria-expanded="false" aria-controls="nsd_pj_collapse_collapse"><b>costInformation</b> : CostInformation - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qj_collapse_collapse" aria-expanded="false" aria-controls="nsd_qj_collapse_collapse"><b>costInformation</b> : CostInformation - <I>Describes the costs to acquire, install and maintain a certain asset.</I></a>
             </h4>
           </div>
-          <div id="nsd_pj_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pj_collapse_panel_body" class="panel-body">
+          <div id="nsd_qj_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qj_collapse_panel_body" class="panel-body">
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1810,13 +1810,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pk_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qk_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pk_collapse_collapse" aria-expanded="false" aria-controls="nsd_pk_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qk_collapse_collapse" aria-expanded="false" aria-controls="nsd_qk_collapse_collapse"><b>dataSource</b> : AbstractDataSource (Item)  - <I>Reference to the datasource where the information in this object is coming from</I></a>
             </h4>
           </div>
-          <div id="nsd_pk_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pk_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
+          <div id="nsd_qk_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qk_collapse_panel_body" class="panel-body"><p>Reference to the datasource where the information in this object is coming from</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -1904,13 +1904,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pl_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_ql_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pl_collapse_collapse" aria-expanded="false" aria-controls="nsd_pl_collapse_collapse"><b>geometry</b> : Geometry - <I>Describes the physical geometry of this asset. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_ql_collapse_collapse" aria-expanded="false" aria-controls="nsd_ql_collapse_collapse"><b>geometry</b> : Geometry - <I>Describes the physical geometry of this asset. </I></a>
             </h4>
           </div>
-          <div id="nsd_pl_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pl_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
+          <div id="nsd_ql_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_ql_collapse_panel_body" class="panel-body"><p>Describes the physical geometry of this asset. Can be a point location or a polygon</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -1992,13 +1992,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pm_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qm_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pm_collapse_collapse" aria-expanded="false" aria-controls="nsd_pm_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qm_collapse_collapse" aria-expanded="false" aria-controls="nsd_qm_collapse_collapse"><b>isOwnedBy</b> : Party (Item)  - <I>Refers to the owner of this object</I></a>
             </h4>
           </div>
-          <div id="nsd_pm_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pm_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
+          <div id="nsd_qm_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qm_collapse_panel_body" class="panel-body"><p>Refers to the owner of this object</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2085,13 +2085,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pn_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qn_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pn_collapse_collapse" aria-expanded="false" aria-controls="nsd_pn_collapse_collapse"><b>material</b> : AbstractMatter - <I>Allows for describing of what material(s) the Asset is made</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qn_collapse_collapse" aria-expanded="false" aria-controls="nsd_qn_collapse_collapse"><b>material</b> : AbstractMatter - <I>Allows for describing of what material(s) the Asset is made</I></a>
             </h4>
           </div>
-          <div id="nsd_pn_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pn_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
+          <div id="nsd_qn_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qn_collapse_panel_body" class="panel-body"><p>Allows for describing of what material(s) the Asset is made</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -2173,13 +2173,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_po_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qo_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_po_collapse_collapse" aria-expanded="false" aria-controls="nsd_po_collapse_collapse"><b>measures</b> : Measures - <I>Measures collection for a specific asset. </I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qo_collapse_collapse" aria-expanded="false" aria-controls="nsd_qo_collapse_collapse"><b>measures</b> : Measures - <I>Measures collection for a specific asset. </I></a>
             </h4>
           </div>
-          <div id="nsd_po_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_po_collapse_panel_body" class="panel-body"><p>Measures collection for a specific asset. Allows you to specify different possibilities for different assets or buildings.</p>
+          <div id="nsd_qo_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qo_collapse_panel_body" class="panel-body"><p>Measures collection for a specific asset. Allows you to specify different possibilities for different assets or buildings.</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Type</th>
@@ -2261,13 +2261,13 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div role="tab" id="nsd_pp_collapse_heading" class="panel-heading">
+          <div role="tab" id="nsd_qp_collapse_heading" class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#nsd_pc_accordion" href="#nsd_pp_collapse_collapse" aria-expanded="false" aria-controls="nsd_pp_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
+              <a data-toggle="collapse" data-parent="#nsd_qc_accordion" href="#nsd_qp_collapse_collapse" aria-expanded="false" aria-controls="nsd_qp_collapse_collapse"><b>sector</b> : Sector (Item)  - <I>Refers to the sector this object is used in</I></a>
             </h4>
           </div>
-          <div id="nsd_pp_collapse_collapse" class="panel-collapse collapse">
-            <div id="nsd_pp_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
+          <div id="nsd_qp_collapse_collapse" class="panel-collapse collapse">
+            <div id="nsd_qp_collapse_panel_body" class="panel-body"><p>Refers to the sector this object is used in</p>
               <table class="table table-bordered">
                 <tr>
                   <th style="align:left">Declaring Type</th>
@@ -2354,7 +2354,7 @@
         </div>
       </div>
     </div>
-    <div id="nsd_ou_tab_3" class="tab-pane">
+    <div id="nsd_pu_tab_3" class="tab-pane">
       <table class="table table-bordered">
         <tr class="info">
           <th>Name</th>
@@ -2367,7 +2367,7 @@
         </tr>
       </table>
     </div>
-    <div id="nsd_ou_tab_4" class="tab-pane">
+    <div id="nsd_pu_tab_4" class="tab-pane">
       <table class="table table-bordered">
         <tr class="info">
           <th>Name</th>
@@ -2375,8 +2375,8 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Glazing.html">Glazing</a></td>
-          <td>Allows to specify the glass of a building, e.g. for calculating heat loss</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ConnectableAsset.html">ConnectableAsset</a></td>
+          <td>Abstract class to group sub classes that have exposed ports or ports of its own</td>
         </tr>
         <tr>
           <td>
@@ -2385,13 +2385,13 @@
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/TemplatedAsset.html">TemplatedAsset</a></td>
-          <td>An instantiated asset that is referring to an asset template and the specific asset. </td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/Glazing.html">Glazing</a></td>
+          <td>Allows to specify the glass of a building, e.g. for calculating heat loss</td>
         </tr>
         <tr>
           <td>
-<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/ConnectableAsset.html">ConnectableAsset</a></td>
-          <td>Abstract class to group sub classes that have exposed ports or ports of its own</td>
+<a href="#router/doc-content/687474703a2f2f7777772e746e6f2e6e6c2f6573646c/TemplatedAsset.html">TemplatedAsset</a></td>
+          <td>An instantiated asset that is referring to an asset template and the specific asset. </td>
         </tr>
       </table>
     </div></div>
